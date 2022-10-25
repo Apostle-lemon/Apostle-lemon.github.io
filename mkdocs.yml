@@ -3,9 +3,9 @@ theme:
   name: material
   language: zh
   # 网站左上角显示的logo
-  logo: images/logo.png
+  logo: img/logo.png
   # 网站图标
-  favicon: images/yileina.ico
+  favicon: img/yileina.ico
   features:
     - navigation.instant
     - navigation.tabs
