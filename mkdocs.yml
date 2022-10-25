@@ -39,3 +39,7 @@ extra:
     - icon: fontawesome/brands/github
       link: #
       name: github
+nav:
+  - Home: index.md
+  - 这里是一级目录:
+    - 这里是二级目录: about.mds
