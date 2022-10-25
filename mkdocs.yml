@@ -6,4 +6,4 @@ theme:
 nav:
   - Home: index.md
   - About: about.md
-  - Contact: contact.md
+  - Contact: hello.md
