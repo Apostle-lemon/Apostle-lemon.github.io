@@ -32,17 +32,10 @@ extra_css:
   - stylesheets/extra.css
 markdown_extensions:
   - attr_list
-copyright: Copyright © 2021 XXX
+copyright: Copyright © 2022 Apostle-lemon
 extra:
   # 右下角的超链接
   social:
     - icon: fontawesome/brands/github
       link: #
       name: github
-nav:
-  - Home: 
-    - index.md
-  - 这里是一级目录:
-    - hello.md
-    - 这里是二级目录: 
-      - about.mds
