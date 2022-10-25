@@ -1,9 +1,41 @@
 site_name: lemon
-
 theme:
   name: material
-
-nav:
-  - Home: index.md
-  - About: about.md
-  - Contact: hello.md
+  language: zh
+  # 网站左上角显示的logo
+  logo: images/logo.jpg
+  # 网站图标
+  favicon: images/favicon.ico
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: red
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    # 深色模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep orange
+      accent: red
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+extra_css:
+  - stylesheets/extra.css
+markdown_extensions:
+  - attr_list
+copyright: Copyright © 2021 XXX
+extra:
+  # 右下角的超链接
+  social:
+    - icon: fontawesome/brands/github
+      link: #
+      name: github
