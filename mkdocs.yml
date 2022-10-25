@@ -40,7 +40,9 @@ extra:
       link: #
       name: github
 nav:
-  - Home: index.md
+  - Home: 
+    - index.md
   - 这里是一级目录:
+    - hello.md
     - 这里是二级目录: 
       - about.mds
