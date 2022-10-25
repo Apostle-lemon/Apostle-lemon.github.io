@@ -1,0 +1,9 @@
+site_name: lemon
+
+theme:
+  name: material
+
+nav:
+  - Home: index.md
+  - About: about.md
+  - Contact: contact.md
