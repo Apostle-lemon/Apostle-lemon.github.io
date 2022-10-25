@@ -3,7 +3,7 @@ theme:
   name: material
   language: zh
   # 网站左上角显示的logo
-  logo: img/logo.png
+  logo: img/log.png
   # 网站图标
   favicon: img/yileina.ico
   features:
