@@ -42,4 +42,5 @@ extra:
 nav:
   - Home: index.md
   - 这里是一级目录:
-    - 这里是二级目录: about.mds
+    - 这里是二级目录: 
+      - about.mds
