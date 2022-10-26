@@ -1,2 +1,9 @@
+# vscode远程插件安装不上
+
 可以查看这篇文档的解决方法
-https://blog.csdn.net/m0_60416282/article/details/126040435
+
+<https://blog.csdn.net/m0_60416282/article/details/126040435>
+
+简单概括就是
+
+下载对应插件的安装包 ---> 将这个安装包上传至服务器的某个位置 ---> 在 vscode 插件栏中选择通过安装包安装插件
