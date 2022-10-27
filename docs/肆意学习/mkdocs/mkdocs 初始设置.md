@@ -88,6 +88,56 @@ extra:
       link: #
 
       name: github
+      
+markdown_extensions:
+
+  - admonition
+
+  - codehilite:
+
+      guess_lang: false
+
+      linenums: false
+
+  - toc:
+
+      permalink: true
+
+  - footnotes
+
+  - meta
+
+  - def_list
+
+  - pymdownx.arithmatex
+
+  - pymdownx.betterem:
+
+      smart_enable: all
+
+  - pymdownx.caret
+
+  - pymdownx.critic
+
+  - pymdownx.details
+
+  - pymdownx.emoji:
+
+      emoji_generator: !!python/name:pymdownx.emoji.to_png
+
+  - pymdownx.inlinehilite
+
+  - pymdownx.magiclink
+
+  - pymdownx.mark
+
+  - pymdownx.smartsymbols
+
+  - pymdownx.superfences
+
+  - pymdownx.tasklist
+
+  - pymdownx.tilde
 ```
 
 ## Git Action
@@ -133,3 +183,5 @@ jobs:
 
       - run: mkdocs gh-deploy --force
 ```
+
+深度设置请看 [[肆意学习/mkdocs/Mkdocs 深度设置]]
