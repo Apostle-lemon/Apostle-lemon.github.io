@@ -132,3 +132,17 @@ db.collection.deleteMany(
    }
 )
 ```
+
+- Find 
+
+findOne
+
+```
+db.coll.findOne(query, projection)
+```
+
+find
+
+```
+db.collection.find(query, projection)
+```
