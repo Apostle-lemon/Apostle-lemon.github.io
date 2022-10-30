@@ -147,12 +147,22 @@ find
 db.collection.find(query, projection)
 ```
 
-- 条件操作符 operator
+### Operator
 
-大于 $get
+#### $expr
 
-小于 $lt
+大于 $gt，小于 $lt，大于等于 $gte，小于等于 $lte，等于 $eq
 
-大于等于 $gte
+#### $in
 
-小于等于 $lte
+表明字段值必须为列表中的任意一个值
+
+```
+{ field: { $in: [<value1>, <value2>, ... <valueN> ] } }
+```
+
+#### $elemMatch
+
+```
+{ arrayfield: { $elemMatch: { $gte: 80, $lt: 85 } } }
+```
