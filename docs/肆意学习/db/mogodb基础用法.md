@@ -166,3 +166,48 @@ db.collection.find(query, projection)
 ```
 { arrayfield: { $elemMatch: { $gte: 80, $lt: 85 } } }
 ```
+
+- sort
+
+采用 sort 方法可以将获得到的数据进行排序，其中1代表升序排列，-1则代表降序排列
+
+```
+db.COLLECTION_NAME.find().sort({KEY:1})
+```
+
+- 索引 index
+
+createIndex
+
+```
+db.collection.createIndex(
+  {
+      key1: 1,        
+      key2: 1        
+  },
+  {
+      unique: true,                
+      sparse: true,                
+  }
+)
+```
+
+dropIndex
+
+```
+db.collection.dropIndex(indexname)
+```
+
+getIndexes
+
+```
+db.collection.getIndexes()
+```
+
+- 聚合 aggregation
+
+聚合(aggregate)主要用于处理数据(诸如统计平均值，求和等)，并返回计算后的数据结果。
+
+```
+db.coll.aggregate(pipeline, options)
+```
