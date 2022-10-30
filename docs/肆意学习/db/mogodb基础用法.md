@@ -146,3 +146,13 @@ find
 ```
 db.collection.find(query, projection)
 ```
+
+- 条件操作符 operator
+
+大于 $get
+
+小于 $lt
+
+大于等于 $gte
+
+小于等于 $lte
