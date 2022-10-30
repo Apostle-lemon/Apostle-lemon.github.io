@@ -214,8 +214,6 @@ db.coll.aggregate(pipeline, options)
 
 其中，pipeline是一系列操作，聚合将文档依次进行一定操作然后返回（返回的是文档指针）。
 
-之前的filter和project都可以放在聚合中，只需在原来的bson前加上`$filter`和`$project`注明该聚合操作的stage。在update中讲到的`$set`也可以作为聚合的stage，不过此时就不是更改数据库中的文档，而是修改通过pipeline传入的文档。
-
 示例
 
 ```
@@ -303,3 +301,4 @@ db.coll.aggregate( [
 { name: 'qaq' }
 */
 ```
+
