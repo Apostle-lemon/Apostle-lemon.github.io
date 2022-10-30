@@ -58,3 +58,36 @@ db.createCollection(name, options)
 ```
 
 当我们向未创建的集合中插入文档的时候，其会自动创建。
+
+- insert
+
+```
+db.collection.insertOne(
+   <document>,
+   {
+      writeConcern: <document>
+   }
+)
+```
+
+如果需要向集合中插入多个文档，语法格式如下
+
+```
+db.collection.insertMany(
+   [ <document 1> , <document 2>, ... ],
+   {
+      writeConcern: <document>,
+      ordered: <boolean>
+   }
+)
+```
+
+这里的插入是顺序插入，即第一个失败后，后面的插入都不会再执行。
+
+	- documen 表示要写入的文档
+
+	- writeConcern 写入策略，默认为1，代表确认写操作
+
+	- ordered 是否顺序写入
+
+
