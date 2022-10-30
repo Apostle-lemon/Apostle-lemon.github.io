@@ -204,10 +204,71 @@ getIndexes
 db.collection.getIndexes()
 ```
 
-- 聚合 aggregation
+### 聚合 Aggregation
 
 聚合(aggregate)主要用于处理数据(诸如统计平均值，求和等)，并返回计算后的数据结果。
 
 ```
 db.coll.aggregate(pipeline, options)
 ```
+
+其中，pipeline是一系列操作，聚合将文档依次进行一定操作然后返回（返回的是文档指针）。
+
+之前的filter和project都可以放在聚合中，只需在原来的bson前加上`$filter`和`$project`注明该聚合操作的stage。在update中讲到的`$set`也可以作为聚合的stage，不过此时就不是更改数据库中的文档，而是修改通过pipeline传入的文档。
+
+示例
+
+```
+db.coll.insertMany([
+    {_id:1,name:"qwq",num:1},
+    {_id:2,name:"qwq",num:3},
+    {_id:3,name:"qaq",num:2},
+    {_id:4,name:"www",num:5},
+])
+
+db.coll.aggregate([
+    {$match:{name:"qwq"}},
+    {$set:{num:0}},
+    {$project:{_id:0}}
+])
+
+
+/* result
+{name:"qwq",num:0}
+{name:"qwq",num:0}
+*/
+```
+
+#### $project
+
+可以用来重命名，删除，移动域。
+
+#### $unwind
+
+将文档中的某一个数组类型字段拆分成多条，每条包含数组中的一个值。
+
+```
+db.coll.insertOne(
+    { "_id" : 1, "item" : "ABC1", sizes: [ "S", "M", "L"] }
+)
+
+db.coll.aggregate( [ { $unwind : "$sizes" } ] )
+
+/* result
+{ "_id" : 1, "item" : "ABC1", "sizes" : "S" }
+{ "_id" : 1, "item" : "ABC1", "sizes" : "M" }
+{ "_id" : 1, "item" : "ABC1", "sizes" : "L" }
+*/
+```
+
+#### $group
+
+```
+{$group: {
+    _id: <identifier>,
+    <field>: <accumulator:value>
+    ...
+}}
+```
+
+其中，`_id`是分组条件，其可以是原来文档的字段，也可以是包含原文档属性的operator表达式。
