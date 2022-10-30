@@ -90,4 +90,22 @@ db.collection.insertMany(
 
 	- ordered 是否顺序写入
 
+- update
 
+```
+db.collection.update(
+   <query>,
+   <update>,
+   {
+     upsert: <boolean>,
+     multi: <boolean>,
+     writeConcern: <document>
+   }
+)
+```
+
+update：update 的对象。最基本是 `$set` 可以将更新指定字段。
+
+multi：是否只更新第一个参数
+
+upsert：如果不存在，是否执行插入新的参数
