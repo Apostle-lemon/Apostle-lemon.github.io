@@ -84,11 +84,11 @@ db.collection.insertMany(
 
 这里的插入是顺序插入，即第一个失败后，后面的插入都不会再执行。
 
-	- documen 表示要写入的文档
+documen 表示要写入的文档
 
-	- writeConcern 写入策略，默认为1，代表确认写操作
+writeConcern 写入策略，默认为1，代表确认写操作
 
-	- ordered 是否顺序写入
+ordered 是否顺序写入
 
 - update
 
