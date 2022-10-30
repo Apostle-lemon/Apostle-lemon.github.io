@@ -243,6 +243,17 @@ db.coll.aggregate([
 
 可以用来重命名，删除，移动域。
 
+```
+db.article.aggregate(
+    { $project : {
+        _id : 0 ,
+        title : 1 ,
+        author : 1
+    }});
+```
+
+在这种情况下我们舍弃了 \_id 字段
+
 #### $unwind
 
 将文档中的某一个数组类型字段拆分成多条，每条包含数组中的一个值。
@@ -272,3 +283,23 @@ db.coll.aggregate( [ { $unwind : "$sizes" } ] )
 ```
 
 其中，`_id`是分组条件，其可以是原来文档的字段，也可以是包含原文档属性的operator表达式。
+
+#### $replaceRoot
+
+一个更加彻底的改变文档结构的方法。
+
+```
+db.coll.insertOne(
+    { _id : 1, sizes: [ {name:"qwq"}, {name:"qaq"}]}
+)
+
+db.coll.aggregate( [ 
+    { $unwind : "$sizes" },
+    { $replaceRoot: {newRoot:"$sizes"}}
+] )
+
+/* result
+{ name: 'qwq' }
+{ name: 'qaq' }
+*/
+```
