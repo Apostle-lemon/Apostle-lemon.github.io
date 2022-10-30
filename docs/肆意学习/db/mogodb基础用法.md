@@ -93,19 +93,42 @@ db.collection.insertMany(
 - update
 
 ```
-db.collection.update(
-   <query>,
+db.collection.updateOne(
+   <filter>,
    <update>,
    {
      upsert: <boolean>,
-     multi: <boolean>,
-     writeConcern: <document>
+     collation: <document>,
+     writeConcern: <document>,
+     arrayFilters: [ <filterdocument1>, ... ],
+     hint:  <document|string>       
    }
 )
 ```
 
-update：update 的对象。最基本是 `$set` 可以将更新指定字段。
+- delete
 
-multi：是否只更新第一个参数
+deleteOne
 
-upsert：如果不存在，是否执行插入新的参数
+```
+db.collection.deleteOne(
+   <filter>,
+   {
+      writeConcern: <document>,
+      collation: <document>,
+      hint: <document|string> 
+   }
+)
+```
+
+deleteMany
+
+```
+db.collection.deleteMany(
+   <filter>,
+   {
+      writeConcern: <document>,
+      collation: <document>
+   }
+)
+```
