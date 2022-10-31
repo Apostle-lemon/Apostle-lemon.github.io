@@ -69,6 +69,15 @@ db.createUser(
 )
 ```
 
+用 mongosh 退出当前 mongod `db.adminCommand( { shutdown: 1 } )`  
+退出 mongod  
+修改配置文件，默认地址为 /etc/mongod.conf
+
+```
+security:
+	authorization: enabled
+```
+
 更详细的内容请见 [Use SCRAM to Authenticate Clients — MongoDB Manual](https://www.mongodb.com/docs/manual/tutorial/configure-scram-client-authentication/)
 
 【注】我们可以在之后会遇到 sudo systemctl status mongodb 不能正确启动 (exitcode=14) 的情况，这是由于当我们执行 mongod 命令时，会创建一些 system files。这些 system files 的 owner 是 root 而不是 mongod。可以通过改变 owner 来修复问题。
