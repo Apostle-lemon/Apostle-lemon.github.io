@@ -51,6 +51,24 @@ func main() {
 
 当我们启动了 access control 的时候，user 必须要验证身份后才能执行操作。默认的做法是使用 SCRAM 进行验证。
 
+启动 mongod `mongod --port 27017 --dbpath /var/lib/mongodb`  
+本地连接 `mongosh --port 27017`  
+创建用户，分配权限
+
+```
+use admin
+db.createUser(
+  {
+    user: "myUserAdmin",
+    pwd: passwordPrompt(), // or cleartext password
+    roles: [
+      { role: "userAdminAnyDatabase", db: "admin" },
+      { role: "readWriteAnyDatabase", db: "admin" }
+    ]
+  }
+)
+```
+
 更详细的内容请见 [Use SCRAM to Authenticate Clients — MongoDB Manual](https://www.mongodb.com/docs/manual/tutorial/configure-scram-client-authentication/)
 
 【注】我们可以在之后会遇到 sudo systemctl status mongodb 不能正确启动 (exitcode=14) 的情况，这是由于当我们执行 mongod 命令时，会创建一些 system files。这些 system files 的 owner 是 root 而不是 mongod。可以通过改变 owner 来修复问题。
@@ -71,7 +89,7 @@ sudo chown mongodb:mongodb /tmp/mongodb-27017.sock
 ```
 db.createUser({
 	user: "userName",
-	pwd: "password",
+	pwd: passwordPrompt(),
 	roles: []
 })
 ```
@@ -88,7 +106,7 @@ db.getUsers()
 db.dropUser("tom")
 ```
 
-更详细的内容请见 [MongoDB Users and Authentication - Create, List, and Delete (prisma.io)](https://www.prisma.io/dataguide/mongodb/configuring-mongodb-user-accounts-and-authentication)
+更详细的内容请见 [MongoDB Users and Authentication - Create, List, and Delete (prisma.io)](https://www.prisma.io/dataguide/mongodb/configuring-mongodb-user-accounts-and-authentication)。关于 roles 的相关内容移步官方文档。
 
 ### bindIP
 
