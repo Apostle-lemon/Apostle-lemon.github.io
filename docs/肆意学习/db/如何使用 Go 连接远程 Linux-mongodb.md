@@ -128,4 +128,6 @@ db.dropUser("tom")
 
 如果我们是在默认情况下启动，那么我们的 bindIP 会被设置为 127.0.0.1 这会使得只有在相同机器上跑的客户端才能得到响应。我们可以通过 config 文件，或者是通过命令行参数 --bind_ip 来设置。
 
+注意在修改配置文件后需要执行 `sudo systemctl restart mongod` 加载配置文件
+
 【注】这可能会带来安全风险。可以查看 Security Checklist 来对照。[Security Checklist — MongoDB Manual](https://www.mongodb.com/docs/manual/administration/security-checklist/)
