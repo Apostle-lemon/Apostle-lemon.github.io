@@ -23,7 +23,9 @@ Mongodb 是一种使用广泛的非关系型数据库。只需键值对，不需
 ### Linux 平台
 
 <https://www.mongodb.com/docs/manual/administration/install-on-linux/>  
-【注】config 默认存放路径 /etc/mongod.conf
+【注】config 默认存放路径 /etc/mongod.conf, 查看默认配置文件，即可发现  
+默认 dbpath 路径 `/var/lib/mongodb`  
+默认 log 文件路径 `/var/log/mongodb/mongod.log`
 
   
 
