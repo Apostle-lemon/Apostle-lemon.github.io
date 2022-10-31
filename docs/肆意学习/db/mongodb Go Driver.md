@@ -49,7 +49,7 @@ func main() {
 
 ### Enable Access Control
 
-当我们启动了 access control 的时候，user 必须要验证身份后才能执行操作。
+当我们启动了 access control 的时候，user 必须要验证身份后才能执行操作。默认的做法是使用 SCRAM 进行验证。
 
 ### 创建用户及密码
 
