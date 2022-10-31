@@ -49,11 +49,13 @@ func main() {
 
 ### Enable Access Control
 
-当我们启动了 access control 的时候，user 必须要验证身份后才能执行操作。默认的做法是使用 SCRAM 进行验证。
+当我们启动了 access control 的时候，user 必须要验证身份后才能执行操作。默认的做法是使用 SCRAM 进行验证。注意为了使得文件具有正确的权限，我们在执行操作的时候需要以 mongod 为用户。
+
+更详细的内容请见 [Use SCRAM to Authenticate Clients — MongoDB Manual](https://www.mongodb.com/docs/manual/tutorial/configure-scram-client-authentication/)
 
 ### 创建用户及密码
 
-远程连接必定需要账户密码进行验证，具体创建用户的方式可以查看这篇文档 [MongoDB Users and Authentication - Create, List, and Delete (prisma.io)](https://www.prisma.io/dataguide/mongodb/configuring-mongodb-user-accounts-and-authentication) 简单概括即为
+远程连接必定需要账户密码进行验证。
 
 创建用户
 
@@ -76,6 +78,8 @@ db.getUsers()
 ```
 db.dropUser("tom")
 ```
+
+更详细的内容请见 [MongoDB Users and Authentication - Create, List, and Delete (prisma.io)](https://www.prisma.io/dataguide/mongodb/configuring-mongodb-user-accounts-and-authentication)
 
 ### bindIP
 
