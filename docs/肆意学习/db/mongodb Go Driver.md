@@ -47,4 +47,28 @@ func main() {
 }
 ```
 
-远程连接必定需要账户密码进行验证，具体创建用户的方式可以查看这篇文档
+### 创建用户及密码
+
+远程连接必定需要账户密码进行验证，具体创建用户的方式可以查看这篇文档 [MongoDB Users and Authentication - Create, List, and Delete (prisma.io)](https://www.prisma.io/dataguide/mongodb/configuring-mongodb-user-accounts-and-authentication) 简单概括即为
+
+创建用户
+
+```
+db.createUser({
+	user: "userName",
+	pwd: "password",
+	roles: []
+})
+```
+
+查看用户
+
+```
+db.getUsers()
+```
+
+删除用户
+
+```
+db.dropUser("tom")
+```
