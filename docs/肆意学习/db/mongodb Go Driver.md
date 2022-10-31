@@ -49,7 +49,7 @@ func main() {
 
 ### Enable Access Control
 
-当我们启动了 access control 的时候，user 必须要验证身份后才能执行操作。默认的做法是使用 SCRAM 进行验证。注意为了使得文件具有正确的权限，我们在执行操作的时候需要以 mongod 为用户。
+当我们启动了 access control 的时候，user 必须要验证身份后才能执行操作。默认的做法是使用 SCRAM 进行验证。
 
 更详细的内容请见 [Use SCRAM to Authenticate Clients — MongoDB Manual](https://www.mongodb.com/docs/manual/tutorial/configure-scram-client-authentication/)
 
