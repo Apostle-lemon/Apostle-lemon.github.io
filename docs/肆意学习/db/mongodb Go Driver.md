@@ -47,6 +47,10 @@ func main() {
 }
 ```
 
+### Enable Access Control
+
+当我们启动了 access control 的时候，user 必须要验证身份后才能执行操作。
+
 ### 创建用户及密码
 
 远程连接必定需要账户密码进行验证，具体创建用户的方式可以查看这篇文档 [MongoDB Users and Authentication - Create, List, and Delete (prisma.io)](https://www.prisma.io/dataguide/mongodb/configuring-mongodb-user-accounts-and-authentication) 简单概括即为
