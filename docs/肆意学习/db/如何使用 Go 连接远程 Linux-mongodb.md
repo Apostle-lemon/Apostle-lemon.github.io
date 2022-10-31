@@ -13,6 +13,8 @@
 
 我们采用如下的代码检测连通性。在代码中我们要变动的内容为 uri，修改为 linux 服务器对应的 ip 地址，端口等信息，即可完成连接。
 
+【注】如果密码中含有@字符，在 Connect 中加入 uri_decode_auth: true
+
 ```Go
 package main
 
