@@ -106,7 +106,7 @@ db.getUsers()
 db.dropUser("tom")
 ```
 
-更详细的内容请见 [MongoDB Users and Authentication - Create, List, and Delete (prisma.io)](https://www.prisma.io/dataguide/mongodb/configuring-mongodb-user-accounts-and-authentication)。关于 roles 的相关内容移步官方文档。
+更详细的内容请见 [MongoDB Users and Authentication - Create, List, and Delete (prisma.io)](https://www.prisma.io/dataguide/mongodb/configuring-mongodb-user-accounts-and-authentication)。关于 roles 的相关内容移步官方文档 [Built-In Roles — MongoDB Manual](https://www.mongodb.com/docs/manual/reference/built-in-roles/#std-label-built-in-roles)。
 
 ### bindIP
 
