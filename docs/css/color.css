@@ -1,5 +1,11 @@
 :root > * {
-    --md-primary-fg-color:        #B1B2FF;
-    --md-primary-fg-color--light: #AAC4FF;
+    --md-primary-fg-color:        #B1B2FF; /* 顶部导航栏的颜色 */
     --md-primary-fg-color--dark:  #D2DAFF;
+    --md-default-fg-color--light:        #B1B2FF;
+    --md-default-fg-color--lighter:      #B1B2FF;
+    --md-default-fg-color--lightest:     #B1B2FF;
+
+    --md-primary-bg-color:        #EEF1FF; /* 标题的颜色 */
+
+    --md-default-fg-color:               hsla(0, 0%, 0%, 0.87);
 } 
