@@ -4,7 +4,7 @@ site_url: https://apostle-lemon.github.io./
 repo_url: https://github.com/Apostle-lemon
 repo_name: 🍋的github主页
 copyright: Copyright © 2022 Apostle-lemon
-edit_uri: 
+edit_uri: tree/main/docs
 
 theme:
   name: material
