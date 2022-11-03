@@ -1,5 +1,8 @@
-site_name: lemon
+site_name: lemon🍋
 site_author: Apostle-lemon
+site_url: https://apostle-lemon.github.io./
+repo_url: https://github.com/Apostle-lemon
+repo_name: 🍋的github主页
 
 theme:
   name: material
@@ -41,6 +44,7 @@ extra:
     - icon: fontawesome/brands/github
       link: #
       name: github
+
 markdown_extensions:
   - admonition
   - codehilite:
