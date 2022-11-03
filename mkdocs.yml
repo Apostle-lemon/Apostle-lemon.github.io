@@ -28,8 +28,8 @@ theme:
     - search.share
   palette:
     scheme: slate
-    primary: lime
-    accent: orange
+    primary: blue grey
+    accent: yellow
 
 plugins:
 - search
