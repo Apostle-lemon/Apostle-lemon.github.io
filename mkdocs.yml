@@ -16,27 +16,19 @@ theme:
   text: Share Tech
   code: JetBrains Mono
   features:
+    - content.code.annotate
     - navigation.instant
+    - navigation.tracking
     - navigation.tabs
-    - navigation.sections
-    - navigation.expand
+    # - navigation.tabs.sticky
+    - navigation.indexes
     - navigation.top
+    - search.highlight
+    - search.share
   palette:
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: indigo
-      accent: red
-      toggle:
-        icon: material/toggle-switch-off-outline
-        name: Switch to dark mode
-    # 深色模式
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: deep orange
-      accent: red
-      toggle:
-        icon: material/toggle-switch
-        name: Switch to light mode
+    scheme: slate
+    primary: black
+    accent: blue
 
 plugins:
 - search
