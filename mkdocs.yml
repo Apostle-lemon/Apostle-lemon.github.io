@@ -1,4 +1,6 @@
 site_name: lemon
+site_author: Apostle-lemon
+
 theme:
   name: material
   language: zh
