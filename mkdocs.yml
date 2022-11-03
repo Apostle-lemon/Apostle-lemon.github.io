@@ -98,5 +98,5 @@ extra_javascript:
 extra_css:
 - stylesheets/extra.css
 - css/extra.css
-# - css/color.css
+- css/color.css
 
