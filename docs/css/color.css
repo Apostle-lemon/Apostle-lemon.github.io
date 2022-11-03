@@ -1,10 +1,7 @@
-:root > * {
-    --md-primary-bg-color:        #EEF1FF; /* 标题的颜色 */
-    --md-primary-fg-color:        #B1B2FF; /* 顶部导航栏的颜色 */
+.md-tabs {
 
-    --md-code-bg-color:           #FFFFFF; /* 代码块的背景颜色 */
-    --md-code-fg-color:           #FFFFFF; /* 代码块的字体颜色 */
+}
 
-    --md-footer-fg-color:                #EEF1FF; /* 底部导航栏的颜色 */
-    --md-footer-bg-color:                #B1B2FF;
+.md-grid {
+    max-width: 1440px; 
 }
