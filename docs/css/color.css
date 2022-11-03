@@ -9,3 +9,9 @@
 .md-footer-meta {
     background-color: rgb(84,109,120);
 }
+
+body {
+    background-image: url("https://lemonapostlepicgo.oss-cn-hangzhou.aliyuncs.com/img/202211032320395.jpg");
+    /* 设置透明程度 */
+    background-color: rgba(0, 0, 0, 0.5);
+}
