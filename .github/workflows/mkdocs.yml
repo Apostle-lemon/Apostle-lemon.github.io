@@ -18,4 +18,6 @@ jobs:
           python-version: '3.10'
       - run: pip install mkdocs-material
       - run: pip install mkdocs-ezlinks-plugin
+      - run: pip install mkdocs-git-revision-date-localized-plugin
+      - run: pip install python-markdown-math
       - run: mkdocs gh-deploy --force
