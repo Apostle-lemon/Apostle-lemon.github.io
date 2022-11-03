@@ -10,9 +10,8 @@
     background-color: rgb(84,109,120);
 }
 
-body {
+.md-main {
 
     background-image: url("https://lemonapostlepicgo.oss-cn-hangzhou.aliyuncs.com/img/202211032320395.jpg");
-    opacity: 0.2
     /* 设置透明程度 */
 }
