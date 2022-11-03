@@ -12,6 +12,9 @@ theme:
   logo: img/yileina2.jpeg
   # 网站图标
   favicon: img/yileina.ico
+  font:
+  text: Share Tech
+  code: JetBrains Mono
   features:
     - navigation.instant
     - navigation.tabs
