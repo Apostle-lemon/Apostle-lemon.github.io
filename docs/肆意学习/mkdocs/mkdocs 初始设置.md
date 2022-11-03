@@ -184,4 +184,6 @@ jobs:
       - run: mkdocs gh-deploy --force
 ```
 
-深度设置请看 [深度设置](Mkdocs深度设置.md)
+深度设置请看 [深度设置](../Mkdocs 深度设置)
+
+[[Mkdocs 深度设置]]
