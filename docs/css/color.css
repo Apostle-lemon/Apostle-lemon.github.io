@@ -2,8 +2,10 @@
     background-color: #628E90;
 }
 
-.md-footer__inner md-grid {
+.md-footer__inner {
     background-color: #628E90;
 }
 
-.
+.md-footer-meta {
+    background-color: #fff;
+}
