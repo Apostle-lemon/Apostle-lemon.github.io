@@ -26,10 +26,10 @@ theme:
     - navigation.top
     - search.highlight
     - search.share
-  # palette:
-  #   scheme: slate
-  #   primary: black
-  #   accent: blue
+  palette:
+    scheme: slate
+    primary: lime
+    accent: orange
 
 plugins:
 - search
