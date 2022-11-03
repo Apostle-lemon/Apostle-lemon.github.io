@@ -39,7 +39,7 @@ extra:
   # 右下角的超链接
   social:
     - icon: fontawesome/brands/github
-      link: #
+      link: https://github.com/Apostle-lemon
       name: github
 
 markdown_extensions:
