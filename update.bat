@@ -11,8 +11,14 @@ if "%time%" lss "10:00" (
 
 git add .
 
+echo ""
+
 git commit -m "update through script at %now%"
 
+echo ""
+
 git push
+
+echo ""
 
 echo "%now% update success"
