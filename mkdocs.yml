@@ -100,3 +100,17 @@ extra_css:
 - css/extra.css
 - css/color.css
 
+nav:
+  - 是柠檬: index.md
+  - 课程学习:
+    - 计算机网络🖧:
+      - 课程学习/计算机网络/【视频】计算机网络.md
+    - 计算机系统二💻:
+      - 课程学习/计算机系统二/【智云课堂】计算机系统二.md
+  - 肆意学习:
+    - mongodb:
+      - 肆意学习/mongodb/go with mongo.md
+      - 肆意学习/mongodb/mongodb基础用法.md
+      - 肆意学习/mongodb/如何使用 Go 连接远程 Linux-mongodb.md
+  - 英语:
+    - 英语/英语水测.md
