@@ -66,3 +66,26 @@ class LemonspiderSpider(scrapy.Spider):
 parse 方法会在得到 response 后进行执行。我们可以直接看 response.body 来看返回了什么内容。
 
 可以通过 `scrapy crawl <your_spider_name>` 进行爬虫的执行。parse 当中可以由 Item 组成一个数组，最后 return 这个 ItemList。当然最开始需要 `from <your_project_name>.items import <your_item_name>`
+
+## Robot 协议
+
+在我们向设定的 url 请求数据之前，会先向对应的域名请求一个 txt 文件，这个 txt 会表明哪一些东西是允许爬虫的，例如 scrapy 可能会请求
+
+```bash
+Crawled (200) <GET http://www.baidu.com/robots.txt> (referer: None)
+```
+
+然后这个 txt 里边可能存放的是这样的内容
+
+```
+User-agent: *
+Disallow: /
+```
+
+也就是，不管什么东西都不让你看。
+
+诶，那我们还想得到对应的内容应该怎么做呢？我们只需要把 setting 里边的 ROBOTSTXT_OBEY 改为 false 即可。
+
+## Xpath
+
+**XPath** 即为 XML 路径语言（XML Path Language），它是一种用来确定 XML 文档中某部分位置的语言。
