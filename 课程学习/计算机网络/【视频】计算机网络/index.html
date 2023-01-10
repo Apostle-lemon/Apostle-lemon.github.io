@@ -1,0 +1,3003 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="Apostle-lemon">
+      
+      
+        <link rel="canonical" href="https://apostle-lemon.github.io./%E8%AF%BE%E7%A8%8B%E5%AD%A6%E4%B9%A0/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E3%80%90%E8%A7%86%E9%A2%91%E3%80%91%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">
+      
+      
+        <link rel="prev" href="../../..">
+      
+      
+        <link rel="next" href="../../%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E4%BA%8C/%E3%80%90%E6%99%BA%E4%BA%91%E8%AF%BE%E5%A0%82%E3%80%91%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E4%BA%8C/">
+      
+      <link rel="icon" href="../../../img/yileina.ico">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.3">
+    
+    
+      
+        <title>[视频] 计算机网络 - lemon🍋</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.6b71719e.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.2505c338.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../../../css/extra.css">
+    
+      <link rel="stylesheet" href="../../../css/color.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="blue-grey" data-md-color-accent="yellow">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#视频-计算机网络" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../../.." title="lemon🍋" class="md-header__button md-logo" aria-label="lemon🍋" data-md-component="logo">
+      
+  <img src="../../../img/yileina2.jpeg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            lemon🍋
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              [视频] 计算机网络
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="分享" aria-label="分享" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Apostle-lemon" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    🍋的github主页
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../.." class="md-tabs__link">
+      是柠檬
+    </a>
+  </li>
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="./" class="md-tabs__link md-tabs__link--active">
+        课程学习
+      </a>
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../%E8%82%86%E6%84%8F%E5%AD%A6%E4%B9%A0/mongodb/mongodb%E5%9F%BA%E7%A1%80%E7%94%A8%E6%B3%95/" class="md-tabs__link">
+        肆意学习
+      </a>
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../%E8%8B%B1%E8%AF%AD/%E8%8B%B1%E8%AF%AD%E6%B0%B4%E6%B5%8B/" class="md-tabs__link">
+        英语
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="lemon🍋" class="md-nav__button md-logo" aria-label="lemon🍋" data-md-component="logo">
+      
+  <img src="../../../img/yileina2.jpeg" alt="logo">
+
+    </a>
+    lemon🍋
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Apostle-lemon" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    🍋的github主页
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        是柠檬
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2" tabindex="0" aria-expanded="true">
+          课程学习
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="课程学习" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          课程学习
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_1" type="checkbox" id="__nav_2_1" checked>
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_1" tabindex="0" aria-expanded="true">
+          计算机网络🖧
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="计算机网络🖧" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_1">
+          <span class="md-nav__icon md-icon"></span>
+          计算机网络🖧
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          [视频] 计算机网络
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        [视频] 计算机网络
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#介质访问控制子层" class="md-nav__link">
+    介质访问控制子层
+  </a>
+  
+    <nav class="md-nav" aria-label="介质访问控制子层">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#广播信道传输协议" class="md-nav__link">
+    广播信道传输协议
+  </a>
+  
+    <nav class="md-nav" aria-label="广播信道传输协议">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#static-fmd--tdm" class="md-nav__link">
+    Static FMD / TDM
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aloha" class="md-nav__link">
+    ALOHA
+  </a>
+  
+    <nav class="md-nav" aria-label="ALOHA">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pure-aloha" class="md-nav__link">
+    Pure ALOHA
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#slotted-aloha" class="md-nav__link">
+    Slotted ALOHA
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#csma" class="md-nav__link">
+    CSMA
+  </a>
+  
+    <nav class="md-nav" aria-label="CSMA">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-persistent-csma" class="md-nav__link">
+    1-persistent CSMA
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nonpersistent-csma" class="md-nav__link">
+    Nonpersistent CSMA
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#p-persistent-csma" class="md-nav__link">
+    P-persistent CSMA
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#csmacd-csma-with-collision-detection" class="md-nav__link">
+    CSMA/CD, CSMA with Collision Detection
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#无冲突协议" class="md-nav__link">
+    无冲突协议
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#有限竞争协议" class="md-nav__link">
+    有限竞争协议
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#以太网" class="md-nav__link">
+    以太网
+  </a>
+  
+    <nav class="md-nav" aria-label="以太网">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#经典以太网-classic-ethernet" class="md-nav__link">
+    经典以太网 Classic Ethernet
+  </a>
+  
+    <nav class="md-nav" aria-label="经典以太网 Classic Ethernet">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#物理层" class="md-nav__link">
+    物理层
+  </a>
+  
+    <nav class="md-nav" aria-label="物理层">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#集线器-hub" class="md-nav__link">
+    集线器 Hub
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#传输协议" class="md-nav__link">
+    传输协议
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#帧结构" class="md-nav__link">
+    帧结构
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#网桥-bridge" class="md-nav__link">
+    网桥 Bridge
+  </a>
+  
+    <nav class="md-nav" aria-label="网桥 Bridge">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#工作原理" class="md-nav__link">
+    工作原理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#冗余链路-redundant-links--parallel-links" class="md-nav__link">
+    冗余链路 Redundant Links / Parallel Links
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#交换式以太网-switched-ethenet" class="md-nav__link">
+    交换式以太网 Switched Ethenet
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vlan-virtual-local-area-network" class="md-nav__link">
+    VLAN Virtual Local Area Network
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wlan" class="md-nav__link">
+    WLAN
+  </a>
+  
+    <nav class="md-nav" aria-label="WLAN">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#一些问题" class="md-nav__link">
+    一些问题
+  </a>
+  
+    <nav class="md-nav" aria-label="一些问题">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#隐藏终端问题" class="md-nav__link">
+    隐藏终端问题
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#暴露终端问题" class="md-nav__link">
+    暴露终端问题
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#冲突避免多路访问-maca-multiple-access-with-collision-avoidance" class="md-nav__link">
+    冲突避免多路访问 MACA Multiple Access with Collision Avoidance
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ieee-80211" class="md-nav__link">
+    IEEE 802.11
+  </a>
+  
+    <nav class="md-nav" aria-label="IEEE 802.11">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mac-sublayer-protocol" class="md-nav__link">
+    MAC Sublayer Protocol
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frame-structure" class="md-nav__link">
+    Frame Structure
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#网络层" class="md-nav__link">
+    网络层
+  </a>
+  
+    <nav class="md-nav" aria-label="网络层">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#主要任务" class="md-nav__link">
+    主要任务
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#提供给传输层的服务" class="md-nav__link">
+    提供给传输层的服务
+  </a>
+  
+    <nav class="md-nav" aria-label="提供给传输层的服务">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#无连接服务的实现数据报网络-datagram-network" class="md-nav__link">
+    无连接服务的实现：数据报网络 Datagram Network
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#面向连接服务的实现虚电路网络-virtual-circuit-network" class="md-nav__link">
+    面向连接服务的实现：虚电路网络 Virtual-circuit Network
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#路由算法" class="md-nav__link">
+    路由算法
+  </a>
+  
+    <nav class="md-nav" aria-label="路由算法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#路由算法_1" class="md-nav__link">
+    路由算法
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shortest-path" class="md-nav__link">
+    Shortest Path
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flooding" class="md-nav__link">
+    Flooding
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#distance-vector-routing--bellman-ford-routing" class="md-nav__link">
+    Distance Vector Routing / Bellman-Ford Routing
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#link-state-routing" class="md-nav__link">
+    Link State Routing
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hierarchical-routing" class="md-nav__link">
+    Hierarchical Routing
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#网络互联" class="md-nav__link">
+    网络互联
+  </a>
+  
+    <nav class="md-nav" aria-label="网络互联">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#不同协议的路由策略" class="md-nav__link">
+    不同协议的路由策略
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#packet-fragmentation" class="md-nav__link">
+    Packet Fragmentation
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#internet-protocol" class="md-nav__link">
+    Internet Protocol
+  </a>
+  
+    <nav class="md-nav" aria-label="Internet Protocol">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ipv4" class="md-nav__link">
+    IPv4
+  </a>
+  
+    <nav class="md-nav" aria-label="IPv4">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#header-格式" class="md-nav__link">
+    Header 格式
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ipv4-地址" class="md-nav__link">
+    IPv4 地址
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#classful-addressing" class="md-nav__link">
+    Classful Addressing
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subnet" class="md-nav__link">
+    Subnet
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cidr-classless-inter-domain-routing" class="md-nav__link">
+    CIDR, Classless Inter-Domain Routing
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nat" class="md-nav__link">
+    NAT
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ipv6" class="md-nav__link">
+    IPv6
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#internet-control-protocols" class="md-nav__link">
+    Internet Control Protocols
+  </a>
+  
+    <nav class="md-nav" aria-label="Internet Control Protocols">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arp" class="md-nav__link">
+    ARP
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dhcp" class="md-nav__link">
+    DHCP
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#icmp" class="md-nav__link">
+    ICMP
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#路由协议" class="md-nav__link">
+    路由协议
+  </a>
+  
+    <nav class="md-nav" aria-label="路由协议">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#互联网路由" class="md-nav__link">
+    互联网路由
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#riprouting-infomation-protocol" class="md-nav__link">
+    RIP，Routing Infomation Protocol
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ospfopen-shortest-path-first" class="md-nav__link">
+    ospf，open Shortest Path First
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bgp-border-gateway-protocol" class="md-nav__link">
+    BGP, Border Gateway Protocol
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ip-组播" class="md-nav__link">
+    IP 组播
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#移动-ip" class="md-nav__link">
+    移动 IP
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#传输层" class="md-nav__link">
+    传输层
+  </a>
+  
+    <nav class="md-nav" aria-label="传输层">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#传输层的功能" class="md-nav__link">
+    传输层的功能
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#udp" class="md-nav__link">
+    UDP
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tcp" class="md-nav__link">
+    TCP
+  </a>
+  
+    <nav class="md-nav" aria-label="TCP">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tcp-segment" class="md-nav__link">
+    TCP Segment
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tcp-connection" class="md-nav__link">
+    TCP Connection
+  </a>
+  
+    <nav class="md-nav" aria-label="TCP Connection">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#release-释放" class="md-nav__link">
+    Release 释放
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#可靠传输机制" class="md-nav__link">
+    可靠传输机制
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#流量控制" class="md-nav__link">
+    流量控制
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#拥塞控制" class="md-nav__link">
+    拥塞控制
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#应用层" class="md-nav__link">
+    应用层
+  </a>
+  
+    <nav class="md-nav" aria-label="应用层">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dns" class="md-nav__link">
+    DNS
+  </a>
+  
+    <nav class="md-nav" aria-label="DNS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-dns-name-space" class="md-nav__link">
+    The DNS Name Space
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#name-servers" class="md-nav__link">
+    Name Servers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#domain-resource-records" class="md-nav__link">
+    Domain Resource Records
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#email" class="md-nav__link">
+    Email
+  </a>
+  
+    <nav class="md-nav" aria-label="Email">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#architecture-and-services" class="md-nav__link">
+    Architecture and Services
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#message-formats" class="md-nav__link">
+    Message Formats
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#smtpsimple-mail-tranfer-protocol" class="md-nav__link">
+    SMTP，simple Mail Tranfer Protocol
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pop3post-office-protocol-3" class="md-nav__link">
+    POP3，post Office Protocol 3
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#imapinternet-message-access-protocol" class="md-nav__link">
+    IMAP，internet Message Access Protocol
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#www" class="md-nav__link">
+    WWW
+  </a>
+  
+    <nav class="md-nav" aria-label="WWW">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#architecture-overview" class="md-nav__link">
+    Architecture Overview
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#http-hypertext-transfer-protocol" class="md-nav__link">
+    HTTP, HyperText Transfer Protocol
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ftp" class="md-nav__link">
+    FTP
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_2" type="checkbox" id="__nav_2_2" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_2" tabindex="0" aria-expanded="false">
+          计算机系统二💻
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="计算机系统二💻" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_2">
+          <span class="md-nav__icon md-icon"></span>
+          计算机系统二💻
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E4%BA%8C/%E3%80%90%E6%99%BA%E4%BA%91%E8%AF%BE%E5%A0%82%E3%80%91%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E4%BA%8C/" class="md-nav__link">
+        [智云课堂] 计算机系统二
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2_3" type="checkbox" id="__nav_2_3" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_3" tabindex="0" aria-expanded="false">
+          计算理论
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="计算理论" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_3">
+          <span class="md-nav__icon md-icon"></span>
+          计算理论
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E8%AE%A1%E7%AE%97%E7%90%86%E8%AE%BA/%E3%80%90%E4%B9%A6%E6%9C%AC%E3%80%91%E8%AE%A1%E7%AE%97%E7%90%86%E8%AE%BA/" class="md-nav__link">
+        [书本] 计算理论
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3" tabindex="0" aria-expanded="false">
+          肆意学习
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="肆意学习" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          肆意学习
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_3_1" type="checkbox" id="__nav_3_1" >
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_1" tabindex="0" aria-expanded="false">
+          mongodb
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="mongodb" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_1">
+          <span class="md-nav__icon md-icon"></span>
+          mongodb
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E8%82%86%E6%84%8F%E5%AD%A6%E4%B9%A0/mongodb/mongodb%E5%9F%BA%E7%A1%80%E7%94%A8%E6%B3%95/" class="md-nav__link">
+        Mongodb
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E8%82%86%E6%84%8F%E5%AD%A6%E4%B9%A0/mongodb/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%20Go%20%E8%BF%9E%E6%8E%A5%E8%BF%9C%E7%A8%8B%20Linux-mongodb/" class="md-nav__link">
+        如何使用 Go 连接远程 Linux-mongodb
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" >
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_2" tabindex="0" aria-expanded="false">
+          爬虫
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="爬虫" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          爬虫
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E8%82%86%E6%84%8F%E5%AD%A6%E4%B9%A0/%E7%88%AC%E8%99%AB/%E7%88%AC%E8%99%AB%20%E5%9F%BA%E7%A1%80/" class="md-nav__link">
+        爬虫 基础
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E8%82%86%E6%84%8F%E5%AD%A6%E4%B9%A0/%E7%88%AC%E8%99%AB/%E7%88%AC%E8%99%AB%E6%A1%86%E6%9E%B6%20scrapy/scrapy%20%E5%9F%BA%E7%A1%80/" class="md-nav__link">
+        Scrapy
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_3_3" type="checkbox" id="__nav_3_3" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_3" tabindex="0" aria-expanded="false">
+          机器学习
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="机器学习" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_3">
+          <span class="md-nav__icon md-icon"></span>
+          机器学习
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E8%82%86%E6%84%8F%E5%AD%A6%E4%B9%A0/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/%E6%9D%8E%E5%AE%8F%E6%AF%85%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" class="md-nav__link">
+        李宏毅机器学习
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4" tabindex="0" aria-expanded="false">
+          英语
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="英语" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          英语
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E8%8B%B1%E8%AF%AD/%E8%8B%B1%E8%AF%AD%E6%B0%B4%E6%B5%8B/" class="md-nav__link">
+        英语水测
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E8%8B%B1%E8%AF%AD/%E9%9A%8F%E4%BE%BF%E8%AE%B0%E8%AE%B0/" class="md-nav__link">
+        随便记记
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#介质访问控制子层" class="md-nav__link">
+    介质访问控制子层
+  </a>
+  
+    <nav class="md-nav" aria-label="介质访问控制子层">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#广播信道传输协议" class="md-nav__link">
+    广播信道传输协议
+  </a>
+  
+    <nav class="md-nav" aria-label="广播信道传输协议">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#static-fmd--tdm" class="md-nav__link">
+    Static FMD / TDM
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aloha" class="md-nav__link">
+    ALOHA
+  </a>
+  
+    <nav class="md-nav" aria-label="ALOHA">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pure-aloha" class="md-nav__link">
+    Pure ALOHA
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#slotted-aloha" class="md-nav__link">
+    Slotted ALOHA
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#csma" class="md-nav__link">
+    CSMA
+  </a>
+  
+    <nav class="md-nav" aria-label="CSMA">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-persistent-csma" class="md-nav__link">
+    1-persistent CSMA
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nonpersistent-csma" class="md-nav__link">
+    Nonpersistent CSMA
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#p-persistent-csma" class="md-nav__link">
+    P-persistent CSMA
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#csmacd-csma-with-collision-detection" class="md-nav__link">
+    CSMA/CD, CSMA with Collision Detection
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#无冲突协议" class="md-nav__link">
+    无冲突协议
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#有限竞争协议" class="md-nav__link">
+    有限竞争协议
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#以太网" class="md-nav__link">
+    以太网
+  </a>
+  
+    <nav class="md-nav" aria-label="以太网">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#经典以太网-classic-ethernet" class="md-nav__link">
+    经典以太网 Classic Ethernet
+  </a>
+  
+    <nav class="md-nav" aria-label="经典以太网 Classic Ethernet">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#物理层" class="md-nav__link">
+    物理层
+  </a>
+  
+    <nav class="md-nav" aria-label="物理层">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#集线器-hub" class="md-nav__link">
+    集线器 Hub
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#传输协议" class="md-nav__link">
+    传输协议
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#帧结构" class="md-nav__link">
+    帧结构
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#网桥-bridge" class="md-nav__link">
+    网桥 Bridge
+  </a>
+  
+    <nav class="md-nav" aria-label="网桥 Bridge">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#工作原理" class="md-nav__link">
+    工作原理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#冗余链路-redundant-links--parallel-links" class="md-nav__link">
+    冗余链路 Redundant Links / Parallel Links
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#交换式以太网-switched-ethenet" class="md-nav__link">
+    交换式以太网 Switched Ethenet
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vlan-virtual-local-area-network" class="md-nav__link">
+    VLAN Virtual Local Area Network
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wlan" class="md-nav__link">
+    WLAN
+  </a>
+  
+    <nav class="md-nav" aria-label="WLAN">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#一些问题" class="md-nav__link">
+    一些问题
+  </a>
+  
+    <nav class="md-nav" aria-label="一些问题">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#隐藏终端问题" class="md-nav__link">
+    隐藏终端问题
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#暴露终端问题" class="md-nav__link">
+    暴露终端问题
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#冲突避免多路访问-maca-multiple-access-with-collision-avoidance" class="md-nav__link">
+    冲突避免多路访问 MACA Multiple Access with Collision Avoidance
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ieee-80211" class="md-nav__link">
+    IEEE 802.11
+  </a>
+  
+    <nav class="md-nav" aria-label="IEEE 802.11">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mac-sublayer-protocol" class="md-nav__link">
+    MAC Sublayer Protocol
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frame-structure" class="md-nav__link">
+    Frame Structure
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#网络层" class="md-nav__link">
+    网络层
+  </a>
+  
+    <nav class="md-nav" aria-label="网络层">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#主要任务" class="md-nav__link">
+    主要任务
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#提供给传输层的服务" class="md-nav__link">
+    提供给传输层的服务
+  </a>
+  
+    <nav class="md-nav" aria-label="提供给传输层的服务">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#无连接服务的实现数据报网络-datagram-network" class="md-nav__link">
+    无连接服务的实现：数据报网络 Datagram Network
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#面向连接服务的实现虚电路网络-virtual-circuit-network" class="md-nav__link">
+    面向连接服务的实现：虚电路网络 Virtual-circuit Network
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#路由算法" class="md-nav__link">
+    路由算法
+  </a>
+  
+    <nav class="md-nav" aria-label="路由算法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#路由算法_1" class="md-nav__link">
+    路由算法
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shortest-path" class="md-nav__link">
+    Shortest Path
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flooding" class="md-nav__link">
+    Flooding
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#distance-vector-routing--bellman-ford-routing" class="md-nav__link">
+    Distance Vector Routing / Bellman-Ford Routing
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#link-state-routing" class="md-nav__link">
+    Link State Routing
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hierarchical-routing" class="md-nav__link">
+    Hierarchical Routing
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#网络互联" class="md-nav__link">
+    网络互联
+  </a>
+  
+    <nav class="md-nav" aria-label="网络互联">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#不同协议的路由策略" class="md-nav__link">
+    不同协议的路由策略
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#packet-fragmentation" class="md-nav__link">
+    Packet Fragmentation
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#internet-protocol" class="md-nav__link">
+    Internet Protocol
+  </a>
+  
+    <nav class="md-nav" aria-label="Internet Protocol">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ipv4" class="md-nav__link">
+    IPv4
+  </a>
+  
+    <nav class="md-nav" aria-label="IPv4">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#header-格式" class="md-nav__link">
+    Header 格式
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ipv4-地址" class="md-nav__link">
+    IPv4 地址
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#classful-addressing" class="md-nav__link">
+    Classful Addressing
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subnet" class="md-nav__link">
+    Subnet
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cidr-classless-inter-domain-routing" class="md-nav__link">
+    CIDR, Classless Inter-Domain Routing
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nat" class="md-nav__link">
+    NAT
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ipv6" class="md-nav__link">
+    IPv6
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#internet-control-protocols" class="md-nav__link">
+    Internet Control Protocols
+  </a>
+  
+    <nav class="md-nav" aria-label="Internet Control Protocols">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arp" class="md-nav__link">
+    ARP
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dhcp" class="md-nav__link">
+    DHCP
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#icmp" class="md-nav__link">
+    ICMP
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#路由协议" class="md-nav__link">
+    路由协议
+  </a>
+  
+    <nav class="md-nav" aria-label="路由协议">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#互联网路由" class="md-nav__link">
+    互联网路由
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#riprouting-infomation-protocol" class="md-nav__link">
+    RIP，Routing Infomation Protocol
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ospfopen-shortest-path-first" class="md-nav__link">
+    ospf，open Shortest Path First
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bgp-border-gateway-protocol" class="md-nav__link">
+    BGP, Border Gateway Protocol
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ip-组播" class="md-nav__link">
+    IP 组播
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#移动-ip" class="md-nav__link">
+    移动 IP
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#传输层" class="md-nav__link">
+    传输层
+  </a>
+  
+    <nav class="md-nav" aria-label="传输层">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#传输层的功能" class="md-nav__link">
+    传输层的功能
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#udp" class="md-nav__link">
+    UDP
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tcp" class="md-nav__link">
+    TCP
+  </a>
+  
+    <nav class="md-nav" aria-label="TCP">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tcp-segment" class="md-nav__link">
+    TCP Segment
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tcp-connection" class="md-nav__link">
+    TCP Connection
+  </a>
+  
+    <nav class="md-nav" aria-label="TCP Connection">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#release-释放" class="md-nav__link">
+    Release 释放
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#可靠传输机制" class="md-nav__link">
+    可靠传输机制
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#流量控制" class="md-nav__link">
+    流量控制
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#拥塞控制" class="md-nav__link">
+    拥塞控制
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#应用层" class="md-nav__link">
+    应用层
+  </a>
+  
+    <nav class="md-nav" aria-label="应用层">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dns" class="md-nav__link">
+    DNS
+  </a>
+  
+    <nav class="md-nav" aria-label="DNS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-dns-name-space" class="md-nav__link">
+    The DNS Name Space
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#name-servers" class="md-nav__link">
+    Name Servers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#domain-resource-records" class="md-nav__link">
+    Domain Resource Records
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#email" class="md-nav__link">
+    Email
+  </a>
+  
+    <nav class="md-nav" aria-label="Email">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#architecture-and-services" class="md-nav__link">
+    Architecture and Services
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#message-formats" class="md-nav__link">
+    Message Formats
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#smtpsimple-mail-tranfer-protocol" class="md-nav__link">
+    SMTP，simple Mail Tranfer Protocol
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pop3post-office-protocol-3" class="md-nav__link">
+    POP3，post Office Protocol 3
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#imapinternet-message-access-protocol" class="md-nav__link">
+    IMAP，internet Message Access Protocol
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#www" class="md-nav__link">
+    WWW
+  </a>
+  
+    <nav class="md-nav" aria-label="WWW">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#architecture-overview" class="md-nav__link">
+    Architecture Overview
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#http-hypertext-transfer-protocol" class="md-nav__link">
+    HTTP, HyperText Transfer Protocol
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ftp" class="md-nav__link">
+    FTP
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+
+<h1 id="视频-计算机网络">[视频] 计算机网络<a class="headerlink" href="#视频-计算机网络" title="Permanent link">&para;</a></h1>
+<h2 id="介质访问控制子层">介质访问控制子层<a class="headerlink" href="#介质访问控制子层" title="Permanent link">&para;</a></h2>
+<p>数据链路层 data link layer 分为了两个子层，LLC Logical link control，MAC medium access control sublayer。</p>
+<p>因为 <strong>广播信道</strong> 会有冲突的可能，所以需要介质访问控制。</p>
+<h3 id="广播信道传输协议">广播信道传输协议<a class="headerlink" href="#广播信道传输协议" title="Permanent link">&para;</a></h3>
+<h4 id="static-fmd--tdm">Static FMD / TDM<a class="headerlink" href="#static-fmd--tdm" title="Permanent link">&para;</a></h4>
+<p>做频分复用或者是时分复用。缺点是①非常浪费，不能有效利用信道资源。②在原有基础上不能有效进行拓展。</p>
+<h4 id="aloha">ALOHA<a class="headerlink" href="#aloha" title="Permanent link">&para;</a></h4>
+<p>ALOHA, additive links on-line hawaii area。对没有 hawaii 代表的就是夏威夷。</p>
+<h5 id="pure-aloha">Pure ALOHA<a class="headerlink" href="#pure-aloha" title="Permanent link">&para;</a></h5>
+<p>每个用户有数据需要发送时就传输。两个用户发送的信号重叠，被称为“冲突”。采用了可能引起冲突的共享信道方式的系统称为竞争系统 contention system。</p>
+<p>发送方检测到接收方发回来的帧，若与预期（可能是 ACK/NAK，也能是将收到的帧重新返回）不同则是发生了冲突。如果发送方检测到了冲突，会等待一段 随机时间 后再次发送该帧。</p>
+<p>在最好的情况下，pure aloha 的信道利用率为 &frac12;e ≈ 18%</p>
+<h5 id="slotted-aloha">Slotted ALOHA<a class="headerlink" href="#slotted-aloha" title="Permanent link">&para;</a></h5>
+<p>把时间分成若干个槽。每个用户在 slot 开始的时候才能发送帧。在最好的情况下，其信道利用率为 1/e</p>
+<h4 id="csma">CSMA<a class="headerlink" href="#csma" title="Permanent link">&para;</a></h4>
+<p>载波侦听多址访问，Carrier Sense Multiple Access</p>
+<p>发之前听一下是否有人在发。</p>
+<h5 id="1-persistent-csma">1-persistent CSMA<a class="headerlink" href="#1-persistent-csma" title="Permanent link">&para;</a></h5>
+<p>如果信道为忙，则在空闲后的一瞬间，将想要发送的信号发送出去。</p>
+<h5 id="nonpersistent-csma">Nonpersistent CSMA<a class="headerlink" href="#nonpersistent-csma" title="Permanent link">&para;</a></h5>
+<p>如果信道是忙的，则随机过一段时间，再来监听信道是否为忙的。</p>
+<h5 id="p-persistent-csma">P-persistent CSMA<a class="headerlink" href="#p-persistent-csma" title="Permanent link">&para;</a></h5>
+<p>工作在 slotted channels，我的时间是分槽的。如果信道为忙，则到下一个 slot 再侦听。如果信道为空闲的，则以 p 的概率发送数据，以 1-p 的概率到下一个 slot 再侦听。</p>
+<h5 id="csmacd-csma-with-collision-detection">CSMA/CD, CSMA with Collision Detection<a class="headerlink" href="#csmacd-csma-with-collision-detection" title="Permanent link">&para;</a></h5>
+<p>最长时间为 2τ，τ 为最远的两个站之间的传播用时。每个帧占用的时间必须为 2t 的整数倍。</p>
+<h4 id="无冲突协议">无冲突协议<a class="headerlink" href="#无冲突协议" title="Permanent link">&para;</a></h4>
+<ul>
+<li>基本位图协议 Basic Bit-map Protocal</li>
+</ul>
+<p>每个竞争期含有 N 个槽，如果 0 号站有一帧要发送，则在 0 号槽中传输一位。在实际传输之前先广播自己有传输愿望的协议为预留协议 reservation protocal。</p>
+<ul>
+<li>令牌环协议 Token Ring Protocal</li>
+</ul>
+<p>每一个时刻，只有一个人持有 token。即只有一个人可以发信息。</p>
+<ul>
+<li>二进制倒计时协议 Binary Countdown Protocal</li>
+</ul>
+<p>每个站是有编号的，只有编号最大的站才有发消息的权利。</p>
+<h4 id="有限竞争协议">有限竞争协议<a class="headerlink" href="#有限竞争协议" title="Permanent link">&para;</a></h4>
+<ul>
+<li>自适应树遍历协议</li>
+</ul>
+<p>逐渐将权限下放给站。每次给的站除以 2。</p>
+<h3 id="以太网">以太网<a class="headerlink" href="#以太网" title="Permanent link">&para;</a></h3>
+<h4 id="经典以太网-classic-ethernet">经典以太网 Classic Ethernet<a class="headerlink" href="#经典以太网-classic-ethernet" title="Permanent link">&para;</a></h4>
+<h5 id="物理层">物理层<a class="headerlink" href="#物理层" title="Permanent link">&para;</a></h5>
+<p>以太网的每个版本都有电缆长度的限制，超过这个限制的网络可以通过中继器 repeater 将多条线缆连接起来。</p>
+<h6 id="集线器-hub">集线器 Hub<a class="headerlink" href="#集线器-hub" title="Permanent link">&para;</a></h6>
+<p>将多个 port 连接的 line 汇集成一个。方便了设备的增减，问题也更容易定位。</p>
+<h5 id="传输协议">传输协议<a class="headerlink" href="#传输协议" title="Permanent link">&para;</a></h5>
+<p>以太网是一种无连接无确认的传输。以太网使用 1-persistent CSMA/CD 算法进行传输。通过二进制指数后退算法 binary exponential backoff 确定每次冲突后的等待时间。</p>
+<h5 id="帧结构">帧结构<a class="headerlink" href="#帧结构" title="Permanent link">&para;</a></h5>
+<p>前 8 个字节为前导码 preable，其中前 7 个字节 10101010 用来同步，第八个字节是 10101011（SOF，start of frame）提示帧的开始。Dest addr 发出的第一个 bit 表示单播 unicasting，1 表示组播 multicasting，全 1 表示广播 boardcasting。Src addr 是全球唯一的，由 IEEE 统一分配。前 3 字节为 OUI，organizationally unique identifier。Pad 用来补充，防止不足 2τ* 带宽 的情况出现。</p>
+<p>10Base2 10 指的是速率为 10 Mbps。Base 指的是基带运输。Base2 Base5 都代表同轴电缆。Base C, Base T 是双绞线。</p>
+<h4 id="网桥-bridge">网桥 Bridge<a class="headerlink" href="#网桥-bridge" title="Permanent link">&para;</a></h4>
+<p>若干个 LAN 之间希望有一些信息交流。可以使用一根电缆连接这些 LAN，但这样会引发一系列问题。</p>
+<ul>
+<li>广播到所有的 LAN，加重了网络的负载。</li>
+<li>最长的线路长度需要受到限制</li>
+<li>两个 LAN 的网络类型，线路速度类型未必是一样的，兼容的</li>
+</ul>
+<h5 id="工作原理">工作原理<a class="headerlink" href="#工作原理" title="Permanent link">&para;</a></h5>
+<p>网桥工作在 混杂模式 promiscuous mode 下。捕捉所有发送给它的数据。如果发送方和接收方不在同一个端口下，那么网桥就会进行一个转发。</p>
+<p>网桥在转发之前需要知道每个站点在哪个端口。网桥中配备了哈希表。收到一个帧时，得知发送站点到端口的映射（这种自学习方法成为后向学习法 backward learning）。如果目的站点不在哈希表中，则网桥采用 flooding algorithm，将这一帧发送给除了发送端口以外的所有端口。</p>
+<p>由于网络的拓扑结构会发生改变，所以表内每一项会有一个 产生/更新 的时间。会有进程将过久没更新的表项删除。直通式交换 cuthrough switching，虫孔路由 wormhole routing。</p>
+<h5 id="冗余链路-redundant-links--parallel-links">冗余链路 Redundant Links / Parallel Links<a class="headerlink" href="#冗余链路-redundant-links--parallel-links" title="Permanent link">&para;</a></h5>
+<p>为了提高可靠性，网桥之间可以使用冗余电路。但是这样子在网络拓扑之中是会产生环路的。为了解决这个问题，方法是生成树算法 spaning tree algorithm，通过不使用一些链路让图简化为一个无环的连通结构。</p>
+<p>由于网桥的转发作用，站被隔离为左右两边，他们之间不会发生冲突。我们称可能会相互冲突的节点的集合为 冲突域 collision domain。连接在网桥同一端口上的所有站属于一个冲突域。</p>
+<p>网桥工作在数据链路层，因为其会查看 MAC 地址，但是不会检查 IP 地址。</p>
+<h5 id="交换式以太网-switched-ethenet">交换式以太网 Switched Ethenet<a class="headerlink" href="#交换式以太网-switched-ethenet" title="Permanent link">&para;</a></h5>
+<p>交换机 switch 是现代网桥的另外一个称呼。现在的以太网都是全双工，点对点的，因此冲突不可能发生。</p>
+<h4 id="vlan-virtual-local-area-network">VLAN Virtual Local Area Network<a class="headerlink" href="#vlan-virtual-local-area-network" title="Permanent link">&para;</a></h4>
+<p>通过改变逻辑结构而不是物理层面的结构来划分 LAN。VLAN 基于 VLAN-aware switches。支持 VLAN 的标准为 IEEE 802.1Q。同时为了适应这个帧结构，帧长的上限被调整到了 1522 字节。</p>
+<p>VLAN 和组播有所不同。组播仍然会收到信息，但是会检查自己在不在组内，如果不在组内则不接受这条消息。但是通过 VLAN 则不在同一 VLAN 下面的不会收到信息。</p>
+<h3 id="wlan">WLAN<a class="headerlink" href="#wlan" title="Permanent link">&para;</a></h3>
+<p>无线局域网。有传播范围这个概念，信道嘈杂错误率高，无法做到监听冲突。确认成功发出需要 ACK</p>
+<h4 id="一些问题">一些问题<a class="headerlink" href="#一些问题" title="Permanent link">&para;</a></h4>
+<h5 id="隐藏终端问题">隐藏终端问题<a class="headerlink" href="#隐藏终端问题" title="Permanent link">&para;</a></h5>
+<p>由于存在传播范围，竞争者感受不到另外一个竞争者，产生数据冲突。</p>
+<h5 id="暴露终端问题">暴露终端问题<a class="headerlink" href="#暴露终端问题" title="Permanent link">&para;</a></h5>
+<p>发送者会把范围内的其他发送者误认为是发送往同一目的地的竞争者。</p>
+<p>以上两个问题的本质，发送端只知道自身周围是否有其他无线电信号干扰。但最终决定信号发送是否成功的，是由接收端附近是否有其他信号干扰决定的。</p>
+<h4 id="冲突避免多路访问-maca-multiple-access-with-collision-avoidance">冲突避免多路访问 MACA Multiple Access with Collision Avoidance<a class="headerlink" href="#冲突避免多路访问-maca-multiple-access-with-collision-avoidance" title="Permanent link">&para;</a></h4>
+<p>A 想要给 B 发送数据前，先发送一个 <strong>RTS, Request to Send</strong>，并在其中包含目标 B 和想要发送的数据帧的长度（表明了这个信息要发送多少时间）；B 在收到这个 RTS 后，回复一个 <strong>CTS, Clear to Send</strong>，其中也包含从 RTS 中得知的这个长度；A 在收到 CTS 后开始传输。需要注意的是，A 的传播范围内的所有站都会听到这个 RTS；听到 RTS 的站就会得知：它们离 A 足够近，因此为了避免与 A 收到的 CTS 发生冲突，它必须保持沉默，直到 A 开始发送信息。同样的，听到 CTS 的所有站都将会知道：在未来的一段时间（可以从 CTS 中的长度推测）内，它们必须保持沉默，否则就会与 B 收到的信息发生冲突。</p>
+<p>注意在 MACA 里面是没有考虑 ACK 的。</p>
+<h4 id="ieee-80211">IEEE 802.11<a class="headerlink" href="#ieee-80211" title="Permanent link">&para;</a></h4>
+<p>2.4Ghz 和 5 Ghz 两个频段。</p>
+<h5 id="mac-sublayer-protocol">MAC Sublayer Protocol<a class="headerlink" href="#mac-sublayer-protocol" title="Permanent link">&para;</a></h5>
+<ul>
+<li>CSMA/CA</li>
+</ul>
+<p>无线电是没有办法做到冲突检测的，所以只能尽可能避免冲突。在发送之前，听一段时间，没有信号。这时候会进行一个随机的后退 back off。当然在 back off 这段时间内也不能有其他发送源发送信息。</p>
+<p>这样的操作被称为 DCF（distributed coordination function）分布式协调。分布式就代表是没有中央控制器的。PCF（point coordination function）就是有中央控制器的情况，但是这种情况不常用。</p>
+<ul>
+<li>Virtual channel sensing</li>
+</ul>
+<p>CSMA/CA 是没有意识到暴露终端问题/隐藏终端问题的。通过 NAV natwork allocation vector 表明在 rts 和 cts 后边需要等待多长时间。可以解决隐藏终端问题，不能解决暴露终端问题。在现实中，RTS/CTS 并没有多大的用途。</p>
+<ul>
+<li>Reliablity  </li>
+</ul>
+<p>通过降低数据率，可以提高发送信号的质量。
+通过发送更短的帧，帧越短则无错发送的概率越大。也可以将 frame 拆分为 fragments，这时候每一个 fragments 会被标号，并且执行停等协议。</p>
+<ul>
+<li>saving power  </li>
+</ul>
+<p>Beacon frames。信标帧。Client 主动告诉接入点进入休眠模式，接入点缓存这段时间内发送给 client 的信息。Client 会在每个 beacon 的时候醒来，检查 beacon frame 内部的 buffer traffic 字段，如果有消息，client 会向 AP 发送一个 poll message。
+apsd ( automatic power save delivery )。Client 醒来了之后就给 Clint 刚刚缓存的信息。相对于 beacon frame 可以更加短。</p>
+<ul>
+<li>quality of service</li>
+</ul>
+<p>服务质量。类似于 Voip（Voice receive internet protocal）是需要优先级的。
+TXOP, transmission oppotunity。不是每个发一帧，而是每次争取到之后有一段时间内的发送的权利。</p>
+<h5 id="frame-structure">Frame Structure<a class="headerlink" href="#frame-structure" title="Permanent link">&para;</a></h5>
+<p>考到了再说吧，我觉得不会考。</p>
+<h2 id="网络层">网络层<a class="headerlink" href="#网络层" title="Permanent link">&para;</a></h2>
+<h3 id="主要任务">主要任务<a class="headerlink" href="#主要任务" title="Permanent link">&para;</a></h3>
+<p>链路层完成的是在网络中如何将一个帧从一个结点传输给另一个结点，网络层则考虑如何将数据包从发送方发送到接收方（从一个主机到另外一个主机），是端到端的最底层。在这个过程中数据包会跨越不同的网络，这也是 inter-net 的名字来源。
+使用一些中间设备，如中继器，集线器，链路层的网桥，交换机可以将两个计算机网络连接起来，但是我们认为这些设备只是扩大了网络，并没有连接不同的网络。
+网络层的中间设备 路由器，则负责连接不同的网络。更高层的还有网关 (gateway) 这一中间设备。因为一些历史原因，路由器有时也被称为网关。
+路由器功能主要有两个，路由与转发。路由 router：确认如何发送。转发 forward：查询路由表，实际做出发送的功能。
+除了将异构网络互联，通过路由和转发实现任意网络结点间的数据传输以外，网络层还关注了拥塞控制 (congestion control) 和服务质量 (quality of service) 等话题。</p>
+<h3 id="提供给传输层的服务">提供给传输层的服务<a class="headerlink" href="#提供给传输层的服务" title="Permanent link">&para;</a></h3>
+<p>和数据链路层一样，在网络层也需要考虑提供的服务是面向连接的还是无连接的服务。Internet Community 一方认为不论怎么样设计网络，网络始终是不可靠的，因此网络服务应该是无连接的，所以他们认为快就好，错了就重传，或者上层增加设计。电话公司认为，网络应该提供有利哪届的服务。现在看来无连接取得了成功，但是 internet 也朝着面向连接的特性进化。例如 VLAN 和 MPLS。</p>
+<h4 id="无连接服务的实现数据报网络-datagram-network">无连接服务的实现：数据报网络 Datagram Network<a class="headerlink" href="#无连接服务的实现数据报网络-datagram-network" title="Permanent link">&para;</a></h4>
+<p>在物理层存在三种不同的交换的方式。包交换，分组交换，电路交换。这里的数据报网络就是包交换的一种实现方式。
+每个数据包都被独立注入网络中，并且每个数据包都会进行独立路由。在这种方式中，我们称数据包为 数据报 datagram，这种网络称为 数据报网络 datagram network。在这种方式中，每个数据报的首部都需要保存其目的地址，每个路由器根据该地址进行寻路。</p>
+<p><img alt="" src="https://cdn.nlark.com/yuque/0/2021/png/641515/1637652466053-2c9f0da5-45ce-4da7-bff5-2c2e888f9e68.png" /></p>
+<h4 id="面向连接服务的实现虚电路网络-virtual-circuit-network">面向连接服务的实现：虚电路网络 Virtual-circuit Network<a class="headerlink" href="#面向连接服务的实现虚电路网络-virtual-circuit-network" title="Permanent link">&para;</a></h4>
+<p>虚电路网络也是包交换的一种实现方式。虚电路不希望给每个数据包选择一条路径，而是希望建立一个连接，选择一条固定的路径，所有需要从这个连接上通过的流量都使用这条路径。
+虚电路的“虚”来自于，这条电路不是专用的，只是逻辑上的。一条链路上可能有多个虚电路通过，一对 Host 之间也可能存在多条不同的虚电路。</p>
+<p>如下图所示，每个连接有一个连接标识符 connection identifier；路由器 A 的表中的第一行表示：如果有一个来自 H1 的、标识符为 1 的包，那么 A 将其转发给 C，且标识符为 1。
+这个方式中，每个数据报不再需要保存目标地址，而是需要保存 connection identifier。</p>
+<p><img alt="" src="https://cdn.nlark.com/yuque/0/2021/png/641515/1637654549320-b135d94e-235b-4d66-a4c6-9ad8d9b6db28.png" /></p>
+<h3 id="路由算法">路由算法<a class="headerlink" href="#路由算法" title="Permanent link">&para;</a></h3>
+<p>路由器的功能就是 路由 routing 和 转发 forwarding。路由是指根据特定的路由算法构造出路由表，同时不断进行更新维护；而转发是指根据到来的数据包的内容查询路由表并从合适的端口转发出去。</p>
+<h4 id="路由算法_1">路由算法<a class="headerlink" href="#路由算法_1" title="Permanent link">&para;</a></h4>
+<p>虚电路网络只在建立一条新的虚电路时草需要做路由决策，因此这种清醒也被称为会话路由 session routing。路由算法可以按是否根据当前网络的流量和拓扑结构调整路由决策分为两大类。一类称之为 静态路由 static routing（非适应算法 nonadaptive algorithm），另一类称之为 动态路由 dynamic routing（适应性算法 adaptive algorithm）。动态路由可以改善网络性能，但是变化太快容易引起震荡，变化过慢会影响路由的一致性。Optimality principle 最优化原则。Sink tree 汇集树，和迪杰斯特拉算法类似。</p>
+<h4 id="shortest-path">Shortest Path<a class="headerlink" href="#shortest-path" title="Permanent link">&para;</a></h4>
+<p>迪杰斯特拉算法。Dijkstra's algorithm。</p>
+<h4 id="flooding">Flooding<a class="headerlink" href="#flooding" title="Permanent link">&para;</a></h4>
+<p>泛洪，扩散法。向除了数据包来的端口外的所有端口都发过去。由于网络中肯定是存在环路的，因此 flooding 必定不能一直持续下去。通过两种方法可以抑制 flooding。
+第一种方式是在数据包的头部加一个 conter，每次经过一个路由器就会减少一。
+第二种方法是记录下是什么数据包使得 flooding 发生了。避免第二次 flooding 这个数据包。</p>
+<p>flooding 代价昂贵，但还是总是会找到路的。</p>
+<h4 id="distance-vector-routing--bellman-ford-routing">Distance Vector Routing / Bellman-Ford Routing<a class="headerlink" href="#distance-vector-routing--bellman-ford-routing" title="Permanent link">&para;</a></h4>
+<p>距离向量路由。每个 station 维护一个表，表中每一项记录了到某个点的最短路是多少。一个点做路由时，会从邻居处得到邻居的表，并且只获得邻居的表，加上 delay，作为判断如何分发信息的依据。</p>
+<p><img alt="" src="https://lemonapostlepicgo.oss-cn-hangzhou.aliyuncs.com/img/202211030949086.png" /></p>
+<p>通过交换信息从而得到最短路的方式，我们称之为收敛（convergence）。虽然距离向量路由可以得到正确的结果，但是其速度过于缓慢。具体说来，其对好消息的反应很快，但是对坏消息的相应很慢（因为在物理链路破坏的情况下，表中距离增加非常缓慢，需要很长时间才能得到正确的链路，即收敛太慢了）。
+另外一个问题是，路由表太大，交换路由表占用的带宽过长，浪费时间。</p>
+<h4 id="link-state-routing">Link State Routing<a class="headerlink" href="#link-state-routing" title="Permanent link">&para;</a></h4>
+<p>链路状态路由。基本思路是：与邻居交流，了解其网络地址和交流成本。将这些信息构造成数据包，发送给其他所有路由器，也接受其他路由器的数据包；根据这些数据包在本地构造出整个网络的拓扑，并利用迪杰斯特拉算法算出每个节点的最短路。</p>
+<p>第一步，路由器向所有点对点的 line 上发送一条特殊的 HELLO 信息。所有接收到 HELLO 信息的路由器会返回一个数据包，告诉发送者是谁恢复了信息。这个 ' 是谁 ' 必须要 unique。【注】每个 LAN 只会指定一个 router 在这个过程中起作用。</p>
+<p><img alt="" src="https://lemonapostlepicgo.oss-cn-hangzhou.aliyuncs.com/img/202211031021634.png" /></p>
+<p>第二步就是计算 link 的 cost。
+第三步就可以建立起 link state packets。
+<img alt="" src="https://lemonapostlepicgo.oss-cn-hangzhou.aliyuncs.com/img/202211031023850.png" /></p>
+<p>这里的 sequence 是为了方便数据报网络的通信。Age 字段代表的是数据包的寿命。下面代表的是邻居信息，以及与邻居之间的距离。每个路由器的包通过 flooding 传遍全网。
+最后每个路由在本地就拥有全网的拓扑图，利用迪杰斯特算法即可得出路由策略。</p>
+<h4 id="hierarchical-routing">Hierarchical Routing<a class="headerlink" href="#hierarchical-routing" title="Permanent link">&para;</a></h4>
+<p>层次路由。把邻近的路由器归类为一个 region 区域。每个区域只找一个路由器来代表。这样减少了带宽的压力。</p>
+<p>如果足够大，可能会有多层的层次路由。更多的内容在 IP 时还会再说。</p>
+<p><img alt="" src="https://lemonapostlepicgo.oss-cn-hangzhou.aliyuncs.com/img/202211031028108.png" /></p>
+<h3 id="网络互联">网络互联<a class="headerlink" href="#网络互联" title="Permanent link">&para;</a></h3>
+<h4 id="不同协议的路由策略">不同协议的路由策略<a class="headerlink" href="#不同协议的路由策略" title="Permanent link">&para;</a></h4>
+<p>即在异构网络之间如何进行转发。有两种分类。</p>
+<p>分类一是链路层采用了不同的协议应该如何转发。可以看到每次会在链路层把 IP package 给网络层，而路由器则会根据 router 之间的数据链路层协议进行封装 frame。</p>
+<p><img alt="" src="https://lemonapostlepicgo.oss-cn-hangzhou.aliyuncs.com/img/202211031038144.png" /></p>
+<p>分类二是在不同的网络层协议上进行转发。这里的方式称为 Tunneling 即隧道。如图，我们经过 IPv4 段时，会将 IPv6 作为 payload 字段，再包装一层。</p>
+<p><img alt="" src="https://lemonapostlepicgo.oss-cn-hangzhou.aliyuncs.com/img/202211031041172.png" /></p>
+<h4 id="packet-fragmentation">Packet Fragmentation<a class="headerlink" href="#packet-fragmentation" title="Permanent link">&para;</a></h4>
+<p>解决不同网络之间设定的 maximum package size (更加专业的说法是 MTU，maximum transmission unit) 的问题。由于 MTU 是可以动态变化的（帧越短，失误可能性越小，在网络情况不好的情况下 MTU 会减少以保证质量），因此发送方很难知道路径上的 MTU 是多少。</p>
+<p>有两种方法可以解决问题 1. 拆分 2. Path MTU discovery</p>
+<p>拆分可以有两种方案，即 transparent fragmentation（ATM）和 nontrasparent fragmentation（IP）。
+ATM 方案中，由进入异构网络的第一个路由器将数据包拆成需要的大小，由离开这个网络的路由器合并为一个大的包。这个过程的问题在于，如果下一个网络仍然有大小约束，那么会需要再重新拆一遍。另外一个问题是，这些分散的小数据包需要从一个路由器离开网络，不然会无法重组。
+IP 方案中，一旦拆开数据包后，便不会再重组。最终的重组过程交给目标 host 来解决。需要判断包的顺序，这是额外的开销，此外错误率会有所提升。
+<img alt="" src="https://lemonapostlepicgo.oss-cn-hangzhou.aliyuncs.com/img/202211031052047.png" /></p>
+<p>下面是 IP 方法的一种实例。End of packet bit 是 fragment 的结束 flag。1 代表结束了，0 则代表还有后续。
+<img alt="" src="https://lemonapostlepicgo.oss-cn-hangzhou.aliyuncs.com/img/202211031059200.png" /></p>
+<p>path MTU discovery，即 atm 的策略。在 source 阶段即发送特定大小的包，需要多次尝试以确定链路的 MTU 为多大。延迟会比较大，但是相对而言错误率没那么高。</p>
+<p><img alt="" src="https://lemonapostlepicgo.oss-cn-hangzhou.aliyuncs.com/img/202211031103673.png" /></p>
+<h3 id="internet-protocol">Internet Protocol<a class="headerlink" href="#internet-protocol" title="Permanent link">&para;</a></h3>
+<h4 id="ipv4">IPv4<a class="headerlink" href="#ipv4" title="Permanent link">&para;</a></h4>
+<p>IPv4 具有一个头部，用来描述问题。以及一个 payload，用来承载对应的数据。</p>
+<h5 id="header-格式">Header 格式<a class="headerlink" href="#header-格式" title="Permanent link">&para;</a></h5>
+<p><img alt="" src="https://lemonapostlepicgo.oss-cn-hangzhou.aliyuncs.com/img/202211031108733.png" />  </p>
+<p>一行是 32 bit，即 4 个字节。</p>
+<ul>
+<li>Version：IPv4 对应的字段值为 0100，是固定的。</li>
+<li>IHL（internet Header Length）由于只分配了 4 个 bit，所以可以代表 5 - 15。这个字段的值代表 header 有多少个 4Bytes，也可以表示 Options 占了多少个字节。</li>
+<li>different services：里边有与拥塞控制相关的信息。</li>
+<li>Total length：代表 head+body 的长度。由于只分配了 16 个 bit，因此 HEAD+BODY 最大值为 65536。单位是 byte。</li>
+<li>Identification。一个数据包的所有的分片都包含同一个 identification，用以表明其属于同一个源数据包。</li>
+<li>DF：是否可以执行分段。</li>
+<li>MF：more fragment。表明后面是否还有别的由同一个数据包分而来的分段。</li>
+<li>Fragment offset。即当前分段的 data 是源数据包的 data 的多少开始，（不计算 header）。单位是 8 bytes。也即，对于从同一个源数据报拆分而来的分段数据报来说，除了最后一个数据报之外，其它的数据报的 data 必须维持 8bytes 的整数倍。</li>
+<li>TTL：time to leave。不能让一个数据报一直在活着。一个 conter。每次经过一跳就会减少 1。</li>
+<li>Protocol：指明了交给哪一个传输进程。可能是 TCP，也可能是 UDP 或者其它类型的协议。</li>
+<li>CheckSum：用作校验。注意 ttl，或者拆分数据报时，checksum 都需要重新算一遍。</li>
+<li>Source address &amp; destination address：源地址和目的地地址。</li>
+<li>options 字段，可以用来做一些安全性的需求，或者记录路由等。options 如果不足四字节，则需要补全。</li>
+</ul>
+<h5 id="ipv4-地址">IPv4 地址<a class="headerlink" href="#ipv4-地址" title="Permanent link">&para;</a></h5>
+<p>Internet 上的每个 host 和 router 都有 IP 地址。需要注意的是，每个 IP 地址指向的是一个网卡，而不是一台机器。所以一台有多个接口的 router，其每个接口都有一个 ip 地址。由于 IPv4 地址如果每个网卡都为一的话并不够用，所以采用了各种方式来使用 IPv4 地址。</p>
+<p>IP 地址具有层次性。即 ip 地址分为网络部分 network portion 和主机部分 host portion。网络部分对于处在同一网络中的所有主机具有相同的值，例如 lan 网络之中的。这个部分也被称为 prefix。子网掩码，就是用来标志哪一部分是属于网络部分，哪一部分是属于主机部分。网络部分有多少个 bit，那么在子网掩码中就有多少个字段为 1，其余部分 bit 则为 0。除了直接用 255.255.255.0 这种方式表示子网掩码外，也可以用 <code>ip地址/n</code> 的方式来表示，其中 n 表示的就是这个子网掩码有多少位为 1。</p>
+<p><img alt="" src="https://lemonapostlepicgo.oss-cn-hangzhou.aliyuncs.com/img/202211031223482.png" /></p>
+<p>对于移动 ip 而言，这种方式是比较不友好的。另外也可能会产生 ip 地址的浪费。</p>
+<h5 id="classful-addressing">Classful Addressing<a class="headerlink" href="#classful-addressing" title="Permanent link">&para;</a></h5>
+<p><img alt="" src="https://lemonapostlepicgo.oss-cn-hangzhou.aliyuncs.com/img/202211031230753.png" /></p>
+<p>我们把地址分为了若干类。由 0 开始的称之为 A 类地址。后面的 network 字段是 7 位，其余的 24 位全都为主机号。</p>
+<p>此外还有一些特殊的地址<br />
+<img alt="" src="https://lemonapostlepicgo.oss-cn-hangzhou.aliyuncs.com/img/202211031233079.png" /><br />
+0.0.0.0 是不知道自己的 ip 地址时的自称。由于动态分配 ip 地址，因此机器在最开始启动时并不知道自己的 ip 地址时多少，因此需要以 0.0.0.0 为自称。</p>
+<p>环回地址，可以访问本机的服务。环回地址不会推送上信道。</p>
+<h5 id="subnet">Subnet<a class="headerlink" href="#subnet" title="Permanent link">&para;</a></h5>
+<p>子网。ICANN（internet corporation for assigned names and numbers）会统筹所有的 ip 地址应该怎样进行划分。已经获得 IP 地址的，可以将 IP 地址进行进一步的细分，如下图所示。</p>
+<p><img alt="" src="https://lemonapostlepicgo.oss-cn-hangzhou.aliyuncs.com/img/202211031241075.png" /></p>
+<h5 id="cidr-classless-inter-domain-routing">CIDR, Classless Inter-Domain Routing<a class="headerlink" href="#cidr-classless-inter-domain-routing" title="Permanent link">&para;</a></h5>
+<p>上面的 network 考虑的是子网的细分。那么 CIDR 考虑的就是子网的聚合。下图表示可以将 ip 网络部分接近的统合到一起。
+<img alt="" src="https://lemonapostlepicgo.oss-cn-hangzhou.aliyuncs.com/img/202211031244260.png" /></p>
+<p>IP 地址不一定会没有冲突，如下图所示，左边的 ip 地址被包含在右边的 ip 地址之内。但是我们有最长前缀匹配协议。即如果来了一个 package，既与左边匹配，又与右边匹配，那么就看谁匹配得更长。
+<img alt="" src="https://lemonapostlepicgo.oss-cn-hangzhou.aliyuncs.com/img/202211031245997.png" /></p>
+<p>虚拟的 ip 地址通常是 10.0.0.0/8 一类的。
+<img alt="" src="https://lemonapostlepicgo.oss-cn-hangzhou.aliyuncs.com/img/202211031303006.png" /></p>
+<h5 id="nat">NAT<a class="headerlink" href="#nat" title="Permanent link">&para;</a></h5>
+<p>NAT 是一个饱受争议的地址分类方式。地址如果是绝对分配的话，会产生各种问题。现在是动态分配地址。</p>
+<p>NAT（network address translation）。nat 意识到不管怎么分配，ip 地址的总数是不变的，是不能从根本上解决问题的。拓宽地址有两种方式，一种方式是给地址增加更多的位数，这就是 IPv6 的解决方案。另一种方式就是 NAT。</p>
+<p>网络层做的是 host 之间的传递，网络层传递给应用层用的是端口 port。虽然我们的 ip 地址不够，但是端口有 16 个 bit，端口号绰绰有余。NAT 想到的方法是创建一个 NAT box，这个 box 具有实际的 ip 地址，这个 box 给它对应的主机分配虚拟的 ip 地址，这些被分配 ip 的主机发送数据报时，实际上是 nat box 以自己的 ip 地址发出，并以自己的空闲端口号进行发送。即把虚拟的 ip 地址 + 端口号，映射成自己的 端口号，即建立了一个表。</p>
+<p><img alt="" src="https://lemonapostlepicgo.oss-cn-hangzhou.aliyuncs.com/img/202211031249927.png" /></p>
+<p>NAT 受到了许多质疑<br />
+<img alt="" src="https://lemonapostlepicgo.oss-cn-hangzhou.aliyuncs.com/img/202211031304911.png" /></p>
+<p>但是，NAT 切实解决了问题。</p>
+<h4 id="ipv6">IPv6<a class="headerlink" href="#ipv6" title="Permanent link">&para;</a></h4>
+<p><img alt="" src="https://lemonapostlepicgo.oss-cn-hangzhou.aliyuncs.com/img/202211031307011.png" /></p>
+<p>IPv6 的地址是 16 个字节的。很大（用不完，用完了再说）。
+IPv6 的地址具有简写方式，即每一个部分的开头的 0 可以不写，此外，如果有&gt;=2 组都为 0，那么那些 0 可以被替换为两个连续的冒号：：（一个 IPv6 的地址内只能有一个 <code>::</code>）
+IPv4 地址可以被表示为 ::20.20.0.21</p>
+<h4 id="internet-control-protocols">Internet Control Protocols<a class="headerlink" href="#internet-control-protocols" title="Permanent link">&para;</a></h4>
+<h5 id="arp">ARP<a class="headerlink" href="#arp" title="Permanent link">&para;</a></h5>
+<p>地址解析协议，ARP，address resolution protocol。
+网络层要用链路层的服务，链路层需要知道 mac 地址。ARP 可以根据 ip 地址获得 MAC 地址。即维护一个表，由 ip 地址 和 MAC 地址构成这个表。如果不知道 ip 地址的 mac 地址是多少，则会给数据链路层发送一个 arp package。目的的 mac 地址设置为全 1（广播），有着这个 arp package 说明的 ip 地址的则会以单播回复 \&lt;ip 地址，mac 地址></p>
+<h5 id="dhcp">DHCP<a class="headerlink" href="#dhcp" title="Permanent link">&para;</a></h5>
+<p>dynamic host configuration protocol。给主机动态分配 IP 地址，是一个基于 UDP 的协议。网络上会存在一个 DHCP server，就是用来动态分配 IP 地址的。虽然带有 mac 地址，但由于分层原则，不能调用。由于 discover 过程是广播的，所以收到的 offer 也可能存在很多，这时候 client 会挑选一个 server，从那个 server 处获得 ip 地址。</p>
+<p>DHCP 获得的 ip 地址是由期限的。</p>
+<p><img alt="" src="https://lemonapostlepicgo.oss-cn-hangzhou.aliyuncs.com/img/202211031321666.png" /></p>
+<h5 id="icmp">ICMP<a class="headerlink" href="#icmp" title="Permanent link">&para;</a></h5>
+<p>internet control message protocol 用于报告传输过程中存在的问题。</p>
+<h3 id="路由协议">路由协议<a class="headerlink" href="#路由协议" title="Permanent link">&para;</a></h3>
+<h4 id="互联网路由">互联网路由<a class="headerlink" href="#互联网路由" title="Permanent link">&para;</a></h4>
+<p>在每个网络内部，有一个域内路由协议 interior gateway protocol。
+在网络之间，存在的则是域间路由协议 exterior gateway protocol。
+域间路由协议需要相同，域内路由协议可以自行由网络创建者自己构造。</p>
+<h4 id="riprouting-infomation-protocol">RIP，Routing Infomation Protocol<a class="headerlink" href="#riprouting-infomation-protocol" title="Permanent link">&para;</a></h4>
+<p>这是一种域内协议。基于 distance vector routing，即只会从相邻节点处获得表，采用 hop 计量距离。规定 hop 最大为 15。每 30s 在 相邻的路由器之间交换一次信息，以维持路由表。</p>
+<p>是一个应用层协议，需要借助 UDP，端口号是 520。</p>
+<h4 id="ospfopen-shortest-path-first">ospf，open Shortest Path First<a class="headerlink" href="#ospfopen-shortest-path-first" title="Permanent link">&para;</a></h4>
+<p>域内协议。直接使用 IP packet 发送，protocol 字段值为 89。基于链路状态路由，即跟所有人交换邻居的信息。</p>
+<h4 id="bgp-border-gateway-protocol">BGP, Border Gateway Protocol<a class="headerlink" href="#bgp-border-gateway-protocol" title="Permanent link">&para;</a></h4>
+<p>域间协议，即 Inter 网的协议。每个 AS（小网络）需要选择至少一个 router 作为发言人。基于距离向量路由，但实际上不一定是最优的。此外还维护到目的地的路径，因此因为称为 Path Vector Protocol。</p>
+<h3 id="ip-组播">IP 组播<a class="headerlink" href="#ip-组播" title="Permanent link">&para;</a></h3>
+<p>可以减少服务器和上方网络的负载。</p>
+<p><img alt="" src="https://lemonapostlepicgo.oss-cn-hangzhou.aliyuncs.com/img/202211031345389.png" /></p>
+<h3 id="移动-ip">移动 IP<a class="headerlink" href="#移动-ip" title="Permanent link">&para;</a></h3>
+<p>DHCP 仍然比较麻烦。
+ICMP 的 ROUTER ADVERTISEMENT/SOLICITATION 消息使得主机可以找到附近的路由器。当主机发现路由器不一样的时候，就知道自己跑了。</p>
+<p>主机在新的网络（remote agent）通过 DHCP 获得一个新的 IP 地址，然后告诉自己的老家（home agent）自己现在在哪。</p>
+<p>Home agent 需要拦截发送给这个跑路了的主机的包，当路由器通过 ARP 查询 跑路主机持有的 IP 具有的 MAC 地址，回复自己的 ip 地址，就相当于是一个代理人。为了快速更新，home agent 也可以发 gratuitous ARP，问跑路主机 ip 对应的 mac 地址，并自己回答。</p>
+<p><img alt="" src="https://lemonapostlepicgo.oss-cn-hangzhou.aliyuncs.com/img/202211031351309.png" /></p>
+<h2 id="传输层">传输层<a class="headerlink" href="#传输层" title="Permanent link">&para;</a></h2>
+<h3 id="传输层的功能">传输层的功能<a class="headerlink" href="#传输层的功能" title="Permanent link">&para;</a></h3>
+<p>解决了如何标识进程的任务。传输层仍然提供了面向连接的服务和两种服务，因为网络层提供的功能更多是由 ISP 决定的，但传输层的代码运行在用户自己的机器上，因此用户可以在这一层选择协议来提高网络的服务质量。</p>
+<p>传输层是面向通信部分的最高层，起着承上启下的作用。每个传输服务会给用户提供一组接口，用户（或者说应用）只需要调用这些接口就能调用相应的功能了。这些接口称之为原语。</p>
+<p>怎么实现端到端的通信呢？SAP: Service Access Point. Transport SAP 即 Port，用来指定进程，有 16bit，可以表示 65536 个不同的端口号。</p>
+<p><img alt="" src="https://lemonapostlepicgo.oss-cn-hangzhou.aliyuncs.com/img/202211041534191.png" /></p>
+<p>传输层的传输单位称为 segment<br />
+<img alt="" src="https://lemonapostlepicgo.oss-cn-hangzhou.aliyuncs.com/img/202211041535797.png" /></p>
+<h3 id="udp">UDP<a class="headerlink" href="#udp" title="Permanent link">&para;</a></h3>
+<p>UDP user datagram protocol。无连接的，追求速度。</p>
+<p><img alt="" src="https://lemonapostlepicgo.oss-cn-hangzhou.aliyuncs.com/img/202211041536831.png" /></p>
+<p>可以看到 UDP 的 header 非常简单。其只做了两件事，一个是加入 port，另一个是加入了 checksum 用以校验。</p>
+<ul>
+<li>UDP length 表示 header 和 body 在内的总字节数目。其最小是 8，因为 header 就具有了 8 个字节。因为 udp length 只占 16 个 bit，因此其只能表示 0~65535。</li>
+<li>UDP checksum 是可选的，如果不想检查 checksum 就全填 0。如果恰好算出来的是全 0，那么就填入全 1。注意 UDP checksum 还需要将伪首部放进来作 checksum。因为 IP 的首部十分重要，愿意加一层保险。
+<img alt="" src="https://lemonapostlepicgo.oss-cn-hangzhou.aliyuncs.com/img/202211041541211.png" /></li>
+</ul>
+<p>UDP 适合一次性传输较少的网络应用，也适合那些可靠性不那么重要但不能容忍延迟的应用。</p>
+<h3 id="tcp">TCP<a class="headerlink" href="#tcp" title="Permanent link">&para;</a></h3>
+<p>TCP，transmission control protocol。是为了在不可靠的 IP 层上实现可靠传输设计的。它是面向连接的，且只支持一对一的通信。</p>
+<p>TCP 是面向字节流的，而 UDP 是面向报文的。这就是说，UDP Segment 的长度由应用程序传来的数据决定，而 TCP 只将应用程序传来的数据视为无结构的字节流，segment 的长度由协议动态决定。</p>
+<h4 id="tcp-segment">TCP Segment<a class="headerlink" href="#tcp-segment" title="Permanent link">&para;</a></h4>
+<p><img alt="" src="https://lemonapostlepicgo.oss-cn-hangzhou.aliyuncs.com/img/202211041559475.png" /></p>
+<ul>
+<li>Sequence number - 4B。指的是这个 body 内部的第一个字节是源第多少个字节。例如一个 segment 的 seq# 是 301，数据长度是 100B，那么这个 segment 就包含了第 301~400 个字节，下一个 segment 的 sequence number 就是 401。</li>
+<li>Ack number - 4B。期望收到 <strong>下一个</strong> segment 的 seq#。例如收到了上面说的那个 segment，那发回去的 segment 的 ack# 就应该是 401。</li>
+<li>TCP header length - 4bits。代表了 header 的长度，单位是 4Bytes。因为 options 字段长度是可选的，因此需要 tcp header length 用来标志从哪里开始。</li>
+<li>CWR, Congestion Window Reduced; ECE - Explicit Congestion Notification Echo：当 TCP 接收端得知网络拥塞后，就设置 ECN-Echo (ECE) 从而显式告知发送端网络拥塞，需要放慢发送速率；当 TCP 发送端收到 ECE 后就设置 CWR 从而告诉接收端已经放慢速率了，不需要再发 ECE 了。</li>
+<li>URG, URGent bit。可以看到后面还有一个 16 bits 的 Urgent pointer 字段，只有在 URG = 1 时该字段才有效。此时表示该 segment 中有紧急数据，范围是数据的前 urgent pointer 那么多个字节。</li>
+<li><strong>ACK</strong>。ACK = 1 时 ack# 字段才有效。TCP 规定建立连接后所有 segment 的 ACK 都是 1。</li>
+<li>PSH, push。PSH = 1 表示接收端在接收到 segment 后应当尽快交付给应用程序，而并不是等到缓冲区满后再向上交付。</li>
+<li><strong>RST</strong>, reset。RST = 1 表示 TCP 连接中发生严重差错，例如主机崩溃等，需要重置连接。</li>
+<li><strong>SYN</strong>, synchronize。SYN = 1 表示这是一个连接请求或者连接接受 segment。SYN = 1, ACK = 0 说明这是一个连接请求 segment，SYN = 1, ACK = 1 说明这是一个连接接受 segment。</li>
+<li><strong>FIN</strong>, finish。FIN = 1 表示发送方数据已经发送完毕，要求释放传输连接。</li>
+<li>Window size，2 Byte，表示允许对方发送的数据量（TCP 是全双工的）。例如 ack 是 701，window size 是 1000，就说明允许对方发送 701~1700 这些字节。Window size 可以为 0，表示现在不想要；之后想要恢复时只需要发送一个同样 ack 但是 window size 不为 0 的 segment 就行了。</li>
+<li>Checksum，2 Byte，计算方法和 UDP 的一样，只是需要把 UDP 协议号 17 改为 TCP 协议号 6。</li>
+<li>Options，0~40 Bytes，但必须是 4 Bytes 的倍数，不足的用 0 补充。最初只规定了 MSS, Maximum Segment Size，即允许对方发来的 TCP segment 中 数据 部分的最大长度。</li>
+</ul>
+<h4 id="tcp-connection">TCP Connection<a class="headerlink" href="#tcp-connection" title="Permanent link">&para;</a></h4>
+<p><img alt="" src="https://lemonapostlepicgo.oss-cn-hangzhou.aliyuncs.com/img/202211041646622.png" /></p>
+<p>我们看见在最初始的情况下，Seq 并不为 0，这是因为当一个新的连接建立时，初始序列号 ( initial sequence number ISN) 生成器会生成一个新的 ISN。生成原则是采用一个 32 位的时钟，这个生成的序列号约 4.55 小时进入一次循环，而一个数据段绝对不可能有这么长的有效期，因此可以认为 ISN 是唯一的。</p>
+<p>第三次握手时将链接彻底建立。握手可以看作是通信双方交换 ISN 的过程。当发送方发送最后一次握手，接收方接收到第三次握手，状态就变为了 established。这时候即可开始正常的数据传输。前面两次是带有 SYN 的，不能携带数据，而第三次握手是可以携带数据的。</p>
+<p>服务端在第二次握手时就分配了资源，因此可能会遇到 SYN 泛洪攻击。</p>
+<p>这种三次握手方式在两者都想与对方建立连接的情况下也能正常建立。</p>
+<p>有错误的情况下的链接建立如图所示</p>
+<p><img alt="" src="https://lemonapostlepicgo.oss-cn-hangzhou.aliyuncs.com/img/202211041724864.png" /></p>
+<h5 id="release-释放">Release 释放<a class="headerlink" href="#release-释放" title="Permanent link">&para;</a></h5>
+<p>通过四次挥手来释放 TCP 链接。
+<img alt="" src="https://lemonapostlepicgo.oss-cn-hangzhou.aliyuncs.com/img/202211041725135.png" /></p>
+<p>2-army problem：理论上无法保证一定能成功释放连接。永远无法保证最后一个 ACK 可以发过去。</p>
+<h4 id="可靠传输机制">可靠传输机制<a class="headerlink" href="#可靠传输机制" title="Permanent link">&para;</a></h4>
+<ul>
+<li>校验。与 UDP 相同。</li>
+<li>序号与确认。使用累计确认。</li>
+<li>重传<ul>
+<li>超时重传。TCP 发送方维护一个 Time-Out Timer，如果超过超时重传时间 RTO, Retransmission Time-Out 就重新发送这个 segment。</li>
+<li>冗余 ACK。假如发送方发送了 1~5 这几个 segment，但是 2 丢掉了，那么接收方收到 1, 3, 4, 5 时各会发回一个 ACK 2，后面 3 个 ACK 2 是冗余的，提示发送方 2 号 segment 丢掉了。此时发送方可以不必等待超时而是立刻重传 2 号 segment，这种技术称为 快速重传（因为不再需要等待超时了）。</li>
+</ul>
+</li>
+</ul>
+<h4 id="流量控制">流量控制<a class="headerlink" href="#流量控制" title="Permanent link">&para;</a></h4>
+<p><img alt="" src="https://lemonapostlepicgo.oss-cn-hangzhou.aliyuncs.com/img/202211041804891.png" /></p>
+<p>当窗口变为 0 时，发送端就不能如通常那样发送段了，但是有两种特殊情况。</p>
+<ul>
+<li>紧急数据。紧急数据仍然可以发送。比如，允许用户杀掉远程机器上的一个进程。</li>
+<li>发送段可以发送一个 1 字节的段，以便强制接收端重新宣告下一个期望的字节和窗口大小。这种数据包称为 窗口探测（window probe）。TCP 标准明确提供了这个选项，防止窗口更新数据包丢失后发生死锁。窗口探测使用的计时器是 persistence timer。</li>
+</ul>
+<h4 id="拥塞控制">拥塞控制<a class="headerlink" href="#拥塞控制" title="Permanent link">&para;</a></h4>
+<p>发送方的窗口大小需要考虑两方面因素：1. 接收方缓冲区剩余大小，即协议中发回的 rwnd；2. 网络的拥塞情况，发送方应当根据拥塞情况维护一个拥塞窗口 cwnd。发送方的窗口大小应取这二者之间的较小值。下面讨论 cwnd 的算法。</p>
+<ul>
+<li>
+<p>慢开始和拥塞控制<br />
+<img alt="" src="https://lemonapostlepicgo.oss-cn-hangzhou.aliyuncs.com/img/202211041830627.png" /><br />
+初始 cwnd 为 1（单位为 KB 或者 MSS, Maximum Segment Size），指数增长到小于等于 ssthresh（slow start threshold）后开始两者每次共同 +1；直到发现拥塞时 cwnd = 1, ssthresh *= 0.5。将 cwnd 置为 1 的考量是让网络迅速消化掉拥塞在网络中的数据包。</p>
+</li>
+<li>
+<p>快重传与快恢复<br />
+<img alt="" src="https://lemonapostlepicgo.oss-cn-hangzhou.aliyuncs.com/img/202211041844311.png" /></p>
+</li>
+</ul>
+<p>快重传和快恢复是对前述算法的优化。我们之前讨论了快速重传；在快恢复算法中，我们发现 3 个冗余 ACK 时会采取 cwnd *= 0.5，ssthresh *= 0.5 的方式，而不是将 cwnd 置为 0。采取这一策略的考量是，既然发送方还能收到冗余的 ACK，那么说明网络还没那么拥塞。</p>
+<h2 id="应用层">应用层<a class="headerlink" href="#应用层" title="Permanent link">&para;</a></h2>
+<h3 id="dns">DNS<a class="headerlink" href="#dns" title="Permanent link">&para;</a></h3>
+<p>理论上说，只要我们记住需要访问的资源部署在哪个 IP 地址上，我们就可以借此使用到对应的服务。但是如果服务更换了一个主机部署，服务提供方就需要将 IP 地址通知到每一个人；同时人们也倾向于使用更具有意义的字符串而不是 IP 地址来记忆。因此人们希望建立一个从便于记忆的主机名和 IP 地址之间的映射解决这些问题。因此我们引入了 DNS, Domain Name System。</p>
+<h4 id="the-dns-name-space">The DNS Name Space<a class="headerlink" href="#the-dns-name-space" title="Permanent link">&para;</a></h4>
+<p><img alt="" src="https://lemonapostlepicgo.oss-cn-hangzhou.aliyuncs.com/img/202211042039396.png" /></p>
+<p>域名可以是相对的，也可以是绝对的。绝对的域名后面需要加上一个点 .。不加就是 relavent。
+如果要创建一个新的域名，则需要上一层的许可。当一个域名被创建后，可以自由地创建子域名，而不需要上层的 permission。</p>
+<h4 id="name-servers">Name Servers<a class="headerlink" href="#name-servers" title="Permanent link">&para;</a></h4>
+<p><img alt="" src="https://lemonapostlepicgo.oss-cn-hangzhou.aliyuncs.com/img/202211042053465.png" /></p>
+<p><img alt="" src="https://lemonapostlepicgo.oss-cn-hangzhou.aliyuncs.com/img/202211042054520.png" /><br />
+会先向本地查一查对应什么 ip 地址。域名服务器是不同的。</p>
+<ul>
+<li>都用 recursive query 会导致 root name server 负载过大。</li>
+<li>整个 Internet 依赖于 root name server，因此实际上它们能力超强且有多份冗余；query packet 通过 anycast 找到其中之一。</li>
+<li>Name server 有缓存。上面的例子展示的是没有缓存的情况；事实上部分 name server 可能已经将内容缓存起来。由于缓存不一定确保正确，因此 name server 上的 records 也是有时限的。</li>
+<li>DNS 的 query 和 response 采用 UDP 发送；DNS name server 使用 53 号端口。如果很短的时间内没有收到 response，DNS client 就重新发一个；如果重复若干次仍然失败，就尝试另一台 name server。</li>
+</ul>
+<h4 id="domain-resource-records">Domain Resource Records<a class="headerlink" href="#domain-resource-records" title="Permanent link">&para;</a></h4>
+<p>Records 内部会存在如下的记录 <code>Domain_name Time_to_live Class Type Value</code><br />
+<img alt="" src="https://lemonapostlepicgo.oss-cn-hangzhou.aliyuncs.com/img/202211042238161.png" /><br />
+注意这是 cs.vu.nl 上面的记录。我们看到的左侧 top 一行，top 后面并没有带 <code>.</code>，所以其表示的是相对地址，即代表的实际上是 top.cs.vu.nl。</p>
+<p>其中的 Type 会存有如下的内容</p>
+<p><img alt="" src="https://lemonapostlepicgo.oss-cn-hangzhou.aliyuncs.com/img/202211042238400.png" /></p>
+<h3 id="email">Email<a class="headerlink" href="#email" title="Permanent link">&para;</a></h3>
+<h4 id="architecture-and-services">Architecture and Services<a class="headerlink" href="#architecture-and-services" title="Permanent link">&para;</a></h4>
+<p><img alt="" src="https://lemonapostlepicgo.oss-cn-hangzhou.aliyuncs.com/img/202211042247269.png" /></p>
+<p>UA, user agent 也叫 email reader<br />
+Message Transfer Agent: 负责发送和接收邮件，同时向发送方报告发送情况。有可能在 ISP 上。</p>
+<p>收发过程</p>
+<ul>
+<li>发送方用 UA 编辑好了以后通过 SMTP（后面讨论）给 Message Transfer Agent</li>
+<li>邮件进入 MTA 的缓存</li>
+<li>SMTP client process 定期扫描 MTA 缓存，发现了以后与接收端 SMTP server process 建立 TCP 连接（可能需要先 DNS），端口号为 25</li>
+<li>TCP 连接建立好了以后 SMTP 开始发送邮件，发完了以后 SMTP 关闭 TCP 连接</li>
+<li>接收端 MTA 中的 SMTP 进程收到邮件后就放到收信人的用户邮箱</li>
+<li>收信人打算收信时，调取 UA，通过 POP3 / IMAP（后面讨论）取回邮件</li>
+</ul>
+<h4 id="message-formats">Message Formats<a class="headerlink" href="#message-formats" title="Permanent link">&para;</a></h4>
+<p><img alt="" src="https://lemonapostlepicgo.oss-cn-hangzhou.aliyuncs.com/img/202211042251989.png" /></p>
+<p>非 ascii 码协议可以通过 MME 拓展协议发送<br />
+<img alt="" src="https://lemonapostlepicgo.oss-cn-hangzhou.aliyuncs.com/img/202211042253228.png" /></p>
+<h4 id="smtpsimple-mail-tranfer-protocol">SMTP，simple Mail Tranfer Protocol<a class="headerlink" href="#smtpsimple-mail-tranfer-protocol" title="Permanent link">&para;</a></h4>
+<p>SMTP 是一种 ASCII 协议，这样方便调试。</p>
+<h4 id="pop3post-office-protocol-3">POP3，post Office Protocol 3<a class="headerlink" href="#pop3post-office-protocol-3" title="Permanent link">&para;</a></h4>
+<p>TCP，port = 110<br />
+有两种服务：下载并保留 or 下载并删除</p>
+<h4 id="imapinternet-message-access-protocol">IMAP，internet Message Access Protocol<a class="headerlink" href="#imapinternet-message-access-protocol" title="Permanent link">&para;</a></h4>
+<p>POP3 的改进版，TCP，port = 143</p>
+<h3 id="www">WWW<a class="headerlink" href="#www" title="Permanent link">&para;</a></h3>
+<h4 id="architecture-overview">Architecture Overview<a class="headerlink" href="#architecture-overview" title="Permanent link">&para;</a></h4>
+<p>Web = World Wide Web，由 Web pages 组成。观看它们的程序是 browser<br />
+URL, Uniform Resource Locator，\&lt;protocol>://\&lt;host>:\&lt;port>/\&lt;path> http 说明了访问这个页面的方式，<www.baidu.com> 经过 DNS 解析后可以得到 IP 地址，.com 后面的 <code>/</code> 说明了具体要看的是这个主机上的什么。</p>
+<h4 id="http-hypertext-transfer-protocol">HTTP, HyperText Transfer Protocol<a class="headerlink" href="#http-hypertext-transfer-protocol" title="Permanent link">&para;</a></h4>
+<p>TCP, port = 80，ASCII 协议。比较通用，不限于 web。
+（端口号 0-1023 是熟知端口号，是已经分配好的）</p>
+<p><img alt="" src="https://lemonapostlepicgo.oss-cn-hangzhou.aliyuncs.com/img/202211042313536.png" /></p>
+<p><img alt="" src="https://lemonapostlepicgo.oss-cn-hangzhou.aliyuncs.com/img/202211042314258.png" /></p>
+<p>相应的状态码有以下五类</p>
+<p><img alt="" src="https://lemonapostlepicgo.oss-cn-hangzhou.aliyuncs.com/img/202211042315446.png" /></p>
+<p><img alt="" src="https://lemonapostlepicgo.oss-cn-hangzhou.aliyuncs.com/img/202211042320832.png" />  </p>
+<p>我们知道 TCP 是需要三次握手协议，在第三次握手时即可传输数据。因此我们看 a 图，在最后一次握手时，请求了数据，客户端回复。但这个回复的 html 当中可能带有指向相同服务器的图片。这时候在 a 方案中需要重新建立。同时我们可以看到 B 方案中图片的传输更加快了，这是由于 slow start 的原因。c 方案则是一种流水线的方式。</p>
+<h3 id="ftp">FTP<a class="headerlink" href="#ftp" title="Permanent link">&para;</a></h3>
+<p>File Transfer Protocol。允许客户指明文件的类型和格式，因此可以在不同架构、操作系统之间的文件传输；允许文件具有存取权限，提供不同用户的权限，因此可以实现远程文件管理和文件共享。</p>
+<p><img alt="" src="https://lemonapostlepicgo.oss-cn-hangzhou.aliyuncs.com/img/202211042330571.png" /></p>
+<p>server listen port 21, client TCP 连接之。随后建立数据连接，有 2 种方式</p>
+<ul>
+<li>主动模式 POST：client 开个端口 N（一般是 ctrl 的端口 + 1），给 server 发 POST N，server 用 port 20 连接 N。问题在于如果 client 有 NAT 之类的可能连不上。</li>
+<li>被动模式 PASV：client 给 server 发 PASV，server 开一个随机端口并且告诉 client，client 连这个端口。问题在于配置复杂而且不利于安全。</li>
+</ul>
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      最后更新:
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">2023年1月11日 01:16:29</span>
+      
+        <br>
+        创建日期:
+        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">2023年1月11日 01:16:29</span>
+      
+    
+  </small>
+</div>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            回到页面顶部
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright © 2022 Apostle-lemon
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    <a href="https://github.com/Apostle-lemon" target="_blank" rel="noopener" title="github" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.annotate", "navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.indexes", "navigation.top", "search.highlight", "search.share"], "search": "../../../assets/javascripts/workers/search.e5c33ebb.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.ba449ae6.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
