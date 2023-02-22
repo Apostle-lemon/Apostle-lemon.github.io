@@ -186,4 +186,4 @@ jobs:
 
 深度设置请看 [深度设置](../Mkdocs 深度设置)
 
-[[Mkdocs 深度设置]]
+[[拾贝/mkdocs/Mkdocs 深度设置]]
