@@ -113,8 +113,8 @@ nav:
       - 课程学习/编译原理/【上课】编译原理.md
   - 拾贝:
     - mongodb:
-      - 拾贝/mongodb/mongodb基础用法.md
-      - 拾贝/mongodb/如何使用 Go 连接远程 Linux-mongodb.md
+      - 拾贝/store/mongodb/mongodb基础用法.md
+      - 拾贝/store/mongodb/如何使用 Go 连接远程 Linux-mongodb.md
     - 爬虫:
       - 拾贝/爬虫/爬虫 基础.md
       - 拾贝/爬虫/爬虫框架 scrapy/scrapy 基础.md

@@ -2,7 +2,7 @@
 
 scrapy 是一套爬虫的框架，我们需要做基本只有两大步：从 response 里提取数据和后续 url，处理数据。
 
-![](https://lemonapostlepicgo.oss-cn-hangzhou.aliyuncs.com/img/202211291220917.png)
+![](img/78818aa762cd9df9fdcc1894ce7fb78a_MD5.png)
 
 ## 安装
 

@@ -68,7 +68,7 @@ int main(){
 
 ![alt 属性文本](图片地址)
 
-例如 ![RUNOOB 图标](http://static.runoob.com/images/runoob-logo.png)
+例如 ![RUNOOB 图标](img/e133adadd1e70195d56f433628b7bb4d_MD5.png)
 
 ## 公式
 

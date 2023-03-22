@@ -65,7 +65,7 @@ ENTRYPOINT：指定镜像的默认入口命令，该入口命令会在启动容�
 
 采用 `docker run -d <IMGname>` 可以启动容器 -d 表示容器在后台运行。
 
-![](https://lemonapostlepicgo.oss-cn-hangzhou.aliyuncs.com/img/202211131752661.png)
+![](img/24b0e8e8de9d158c8c8c3ff21c6d87e5_MD5.png)
 
 删除容器
 

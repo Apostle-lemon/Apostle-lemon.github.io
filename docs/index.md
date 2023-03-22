@@ -3,7 +3,7 @@
 嘿，你好，如果你看到了这一行文字的话，那么恭喜你，你要见证这一块地是如何被逐渐充实完善的啦。
 
 !!! note ""
-    ![](https://lemonapostlepicgo.oss-cn-hangzhou.aliyuncs.com/img/202211032222975.jpg)
+    ![](img/e715468615070b3b622051dca77616fe_MD5.jpg)
     <br><br>
     <div align="center" style="font-size:12px">
         星光熠熠，繁星闪烁。
