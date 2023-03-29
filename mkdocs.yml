@@ -128,4 +128,3 @@ nav:
           - 拾贝/语言相关/golang/Go语言精进之路/42 优先编写表驱动的测试.md
           - 拾贝/语言相关/golang/Go语言精进之路/43 使用 testdata 管理测试依赖的外部数据文件.md
           - 拾贝/语言相关/golang/Go语言精进之路/44 正确运用 fake stub 和 mock 等辅助单元测试.md
-      - java:
