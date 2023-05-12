@@ -3,9 +3,10 @@
 嘿，你好，如果你看到了这一行文字的话，那么恭喜你，你要见证这一块地是如何被逐渐充实完善的啦。
 
 !!! note ""
-    ![](img/e715468615070b3b622051dca77616fe_MD5.jpg)
+
+   ![](https://apostle-lemon-1304725406.cos.ap-beijing.myqcloud.com/202305121423001.png)  
     <br><br>
-    <div align="center" style="font-size:12px">
-        星光熠熠，繁星闪烁。
-    </div>
+    <div align="center" style="font-size:12px">  
+        星光熠熠，繁星闪烁。  
+    </div>  
     <br>
