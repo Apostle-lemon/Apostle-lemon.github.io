@@ -1,4 +1,4 @@
-# Go 无法对 Main 包执行测试
+# Go 无法对 Main 模块执行测试
 
 分析问题之前，我们首先要理清楚 go module, go package, import path 这几个概念。
 
