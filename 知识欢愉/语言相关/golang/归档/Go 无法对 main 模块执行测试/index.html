@@ -1,0 +1,1243 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="Apostle-lemon">
+      
+      
+        <link rel="canonical" href="https://apostle-lemon.github.io./%E7%9F%A5%E8%AF%86%E6%AC%A2%E6%84%89/%E8%AF%AD%E8%A8%80%E7%9B%B8%E5%85%B3/golang/%E5%BD%92%E6%A1%A3/Go%20%E6%97%A0%E6%B3%95%E5%AF%B9%20main%20%E6%A8%A1%E5%9D%97%E6%89%A7%E8%A1%8C%E6%B5%8B%E8%AF%95/">
+      
+      
+        <link rel="prev" href="../../../../store/mongodb/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%20Go%20%E8%BF%9E%E6%8E%A5%E8%BF%9C%E7%A8%8B%20Linux-mongodb/">
+      
+      
+        <link rel="next" href="../../Go%E8%AF%AD%E8%A8%80%E7%B2%BE%E8%BF%9B%E4%B9%8B%E8%B7%AF/40%20%E5%8C%85%E5%86%85%E6%B5%8B%E8%AF%95%E4%B8%8E%E5%8C%85%E5%A4%96%E6%B5%8B%E8%AF%95%E7%9A%84%E5%8C%BA%E5%88%AB/">
+      
+      <link rel="icon" href="../../../../../img/yileina.ico">
+      <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.1.21">
+    
+    
+      
+        <title>Go 无法对 Main 模块执行测试 - lemon🍋</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.eebd395e.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../../assets/stylesheets/palette.ecc896b0.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../../../../../css/extra.css">
+    
+      <link rel="stylesheet" href="../../../../../css/color.css">
+    
+    <script>__md_scope=new URL("../../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="blue-grey" data-md-color-accent="yellow">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#go-无法对-main-模块执行测试" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../../../../.." title="lemon🍋" class="md-header__button md-logo" aria-label="lemon🍋" data-md-component="logo">
+      
+  <img src="../../../../../img/yileina2.jpeg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            lemon🍋
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Go 无法对 Main 模块执行测试
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="分享" aria-label="分享" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Apostle-lemon" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    🍋的github主页
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../../../.." class="md-tabs__link">
+      是柠檬
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../../3-8%E8%AF%BE%E7%A8%8B%E5%AD%A6%E4%B9%A0/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E3%80%90%E8%A7%86%E9%A2%91%E3%80%91%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" class="md-tabs__link">
+        课程学习
+      </a>
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../store/mongodb/mongodb%E5%9F%BA%E7%A1%80%E7%94%A8%E6%B3%95/" class="md-tabs__link md-tabs__link--active">
+        知识欢愉
+      </a>
+    </li>
+  
+
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../../.." title="lemon🍋" class="md-nav__button md-logo" aria-label="lemon🍋" data-md-component="logo">
+      
+  <img src="../../../../../img/yileina2.jpeg" alt="logo">
+
+    </a>
+    lemon🍋
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Apostle-lemon" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    🍋的github主页
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../.." class="md-nav__link">
+        是柠檬
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          课程学习
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          课程学习
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+          计算机网络
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2_1">
+          <span class="md-nav__icon md-icon"></span>
+          计算机网络
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../3-8%E8%AF%BE%E7%A8%8B%E5%AD%A6%E4%B9%A0/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E3%80%90%E8%A7%86%E9%A2%91%E3%80%91%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" class="md-nav__link">
+        [视频] 计算机网络
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+          计算机系统二
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2_2">
+          <span class="md-nav__icon md-icon"></span>
+          计算机系统二
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../3-8%E8%AF%BE%E7%A8%8B%E5%AD%A6%E4%B9%A0/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E4%BA%8C/%E3%80%90%E6%99%BA%E4%BA%91%E8%AF%BE%E5%A0%82%E3%80%91%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E4%BA%8C/" class="md-nav__link">
+        [智云课堂] 计算机系统二
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+          计算理论
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2_3">
+          <span class="md-nav__icon md-icon"></span>
+          计算理论
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../3-8%E8%AF%BE%E7%A8%8B%E5%AD%A6%E4%B9%A0/%E4%B8%8D%E6%83%B3%E5%AD%A6%E4%BA%86/" class="md-nav__link">
+        你好
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+          编译原理
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2_4">
+          <span class="md-nav__icon md-icon"></span>
+          编译原理
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../3-8%E8%AF%BE%E7%A8%8B%E5%AD%A6%E4%B9%A0/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/%E3%80%90%E4%B8%8A%E8%AF%BE%E3%80%91%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/" class="md-nav__link">
+        编译原理
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          知识欢愉
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          知识欢愉
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+          mongodb
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_1">
+          <span class="md-nav__icon md-icon"></span>
+          mongodb
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../store/mongodb/mongodb%E5%9F%BA%E7%A1%80%E7%94%A8%E6%B3%95/" class="md-nav__link">
+        Mongodb
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../store/mongodb/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%20Go%20%E8%BF%9E%E6%8E%A5%E8%BF%9C%E7%A8%8B%20Linux-mongodb/" class="md-nav__link">
+        如何使用 Go 连接远程 Linux-mongodb
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" checked>
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+          语言相关
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          语言相关
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_1" checked>
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_2_1" id="__nav_3_2_1_label" tabindex="0">
+          golang
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_1_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_3_2_1">
+          <span class="md-nav__icon md-icon"></span>
+          golang
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_1_1" checked>
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_2_1_1" id="__nav_3_2_1_1_label" tabindex="0">
+          归档
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_2_1_1_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_3_2_1_1">
+          <span class="md-nav__icon md-icon"></span>
+          归档
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Go 无法对 Main 模块执行测试
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Go 无法对 Main 模块执行测试
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#module-root-directory-的包的导入路径是什么" class="md-nav__link">
+    Module Root Directory 的包的导入路径是什么
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#go-test-的原理" class="md-nav__link">
+    Go Test 的原理
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#最终真相" class="md-nav__link">
+    最终真相
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_1_2" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_2_1_2" id="__nav_3_2_1_2_label" tabindex="0">
+          go精进之路
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_2_1_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_2_1_2">
+          <span class="md-nav__icon md-icon"></span>
+          go精进之路
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Go%E8%AF%AD%E8%A8%80%E7%B2%BE%E8%BF%9B%E4%B9%8B%E8%B7%AF/40%20%E5%8C%85%E5%86%85%E6%B5%8B%E8%AF%95%E4%B8%8E%E5%8C%85%E5%A4%96%E6%B5%8B%E8%AF%95%E7%9A%84%E5%8C%BA%E5%88%AB/" class="md-nav__link">
+        包内测试与包外测试的区别
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Go%E8%AF%AD%E8%A8%80%E7%B2%BE%E8%BF%9B%E4%B9%8B%E8%B7%AF/41%20%E6%9C%89%E5%B1%82%E6%AC%A1%E5%9C%B0%E7%BB%84%E7%BB%87%E6%B5%8B%E8%AF%95%E4%BB%A3%E7%A0%81/" class="md-nav__link">
+        41 有层次地组织测试代码
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Go%E8%AF%AD%E8%A8%80%E7%B2%BE%E8%BF%9B%E4%B9%8B%E8%B7%AF/42%20%E4%BC%98%E5%85%88%E7%BC%96%E5%86%99%E8%A1%A8%E9%A9%B1%E5%8A%A8%E7%9A%84%E6%B5%8B%E8%AF%95/" class="md-nav__link">
+        42 优先编写表驱动的测试
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Go%E8%AF%AD%E8%A8%80%E7%B2%BE%E8%BF%9B%E4%B9%8B%E8%B7%AF/43%20%E4%BD%BF%E7%94%A8%20testdata%20%E7%AE%A1%E7%90%86%E6%B5%8B%E8%AF%95%E4%BE%9D%E8%B5%96%E7%9A%84%E5%A4%96%E9%83%A8%E6%95%B0%E6%8D%AE%E6%96%87%E4%BB%B6/" class="md-nav__link">
+        43 使用 Testdata 管理测试依赖的外部数据文件
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Go%E8%AF%AD%E8%A8%80%E7%B2%BE%E8%BF%9B%E4%B9%8B%E8%B7%AF/44%20%E6%AD%A3%E7%A1%AE%E8%BF%90%E7%94%A8%20fake%20stub%20%E5%92%8C%20mock%20%E7%AD%89%E8%BE%85%E5%8A%A9%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/" class="md-nav__link">
+        44 正确运用 Fake Stub 和 Mock 等辅助单元测试
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#module-root-directory-的包的导入路径是什么" class="md-nav__link">
+    Module Root Directory 的包的导入路径是什么
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#go-test-的原理" class="md-nav__link">
+    Go Test 的原理
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#最终真相" class="md-nav__link">
+    最终真相
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="go-无法对-main-模块执行测试">Go 无法对 Main 模块执行测试<a class="headerlink" href="#go-无法对-main-模块执行测试" title="Permanent link">&para;</a></h1>
+<p>分析问题之前，我们首先要理清楚 go module, go package, import path 这几个概念。</p>
+<p>go package 是 go 的基本编译单元，是 go 从娘胎里就具有的概念。</p>
+<p>Go 在 1.11 版本引入了 go module，之后 go module 就代替了 gopath 构建模式成为了 go 的标准构建模式。</p>
+<p>go mod 参考手册中关于 go module 的定义是：“一个 module 由一个 module path 来识别，go.mod 文件中声明了 module path 以及关于该 module 的依赖信息，包含 go.mod 文件的目录称为 <strong>module root directory</strong>. main module 是包含调用 go 命令的目录的 module”</p>
+<div class="highlight"><pre><span></span><code>注：本文只讨论 module 构建
+</code></pre></div>
+<p>go module 的引入是为了解决依赖管理问题。但是 go module 的引入，也对 package 的 import path 的确定与含义产生了些许影响。</p>
+<p>GOPATH 构建模式时代，go package 的导入路径（import path）是该 package 所在目录相对于 $GOPATH/src 的路径来确定的。比如你的 package 放在 $GOPATH/src/github.com/usr/repo，那么你的 package 的导入路径就是 import "github.com/user/repo", 这和当时 go get 下载包的路径规则是一致的。</p>
+<p>在 GO module 时代，$GOPATH/src 不再被强调，go module 和 $GOPATH/src 没有任何的耦合关系。这时，<strong>go package 的导入路径由 go module path 和 package 在 module 中的相对路径共同确定</strong>。特别注意的是，这里 <code>import()</code> 语句仅仅考虑路径（即文件夹名）而对包名没有考虑，但是 go 会将被导入的包的包名默认作为别名，即自动 as &lt;被导入的包名&gt;。</p>
+<ul>
+<li>如果你的 module path (go.mod 文件中声明) 为 github.com/user/your_module_name, 而你的 package 在 youmodule 根路径下的 foo/bar 目录下，那么你的 package 的导入路径就是 github.com/user/your_module_name/foo/bar。</li>
+<li>
+<p>如果采用的 module path 不是上面的 url 的形式，而是类似于 "lemon/lemon_module" 这样的形式，而你的 package 在 lemon_module 路径下的 foo/bar 目录下，那么你的包的导入路径就是 lemon/lemon_module/foo/bar。</p>
+<p>当然，module path 除了作为导入路径的前缀，还可以用来指示 module 存放的版本托管目录的 url 地址。</p>
+</li>
+</ul>
+<h2 id="module-root-directory-的包的导入路径是什么">Module Root Directory 的包的导入路径是什么<a class="headerlink" href="#module-root-directory-的包的导入路径是什么" title="Permanent link">&para;</a></h2>
+<p>根据上面对 go module 模式下 package 导入路径的定义，go module 根目录下包的导入路径就是 module path。</p>
+<p>例如，假设我们有以下的目录结构及内容。</p>
+<div class="highlight"><pre><span></span><code>vscode@VM-8-10-ubuntu:~/desktop/goprogramming/46$<span class="w"> </span>tree<span class="w"> </span>.
+.
+├──<span class="w"> </span>go.mod
+├──<span class="w"> </span>pkg.go
+└──<span class="w"> </span>pkg_test.go
+
+<span class="m">0</span><span class="w"> </span>directories,<span class="w"> </span><span class="m">3</span><span class="w"> </span>files
+vscode@VM-8-10-ubuntu:~/desktop/goprogramming/46$<span class="w"> </span>cat<span class="w"> </span>go.mod
+module<span class="w"> </span><span class="nb">test</span>
+
+go<span class="w"> </span><span class="m">1</span>.20
+vscode@VM-8-10-ubuntu:~/desktop/goprogramming/46$<span class="w"> </span>cat<span class="w"> </span>pkg.go
+package<span class="w"> </span>main
+
+func<span class="w"> </span>Add<span class="o">(</span>x,<span class="w"> </span>y<span class="w"> </span>int<span class="o">)</span><span class="w"> </span>int<span class="w"> </span><span class="o">{</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span>x<span class="w"> </span>+<span class="w"> </span>y
+<span class="o">}</span>
+vscode@VM-8-10-ubuntu:~/desktop/goprogramming/46$<span class="w"> </span>cat<span class="w"> </span>pkg_test.go
+package<span class="w"> </span>main
+
+import<span class="w"> </span><span class="o">(</span>
+<span class="w">        </span><span class="s2">&quot;testing&quot;</span>
+<span class="o">)</span>
+
+func<span class="w"> </span>TestAdd<span class="o">(</span>t<span class="w"> </span>*testing.T<span class="o">)</span><span class="w"> </span><span class="o">{</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span>Add<span class="o">(</span><span class="m">1</span>,<span class="w"> </span><span class="m">2</span><span class="o">)</span><span class="w"> </span>!<span class="o">=</span><span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="o">{</span>
+<span class="w">                </span>t.Error<span class="o">(</span><span class="s2">&quot;Add(1, 2) != 3&quot;</span><span class="o">)</span>
+<span class="w">        </span><span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div>
+<p>那么，这里的 main module 的根路径为 46 目录，该目录下存在了一个包，“46”。那么这个 main 包的导入路径就是 go module 的 module path：“test”。即便你将 pkg.go 中的包名换成别的，那么包的导入路径仍然是 test。</p>
+<h2 id="go-test-的原理">Go Test 的原理<a class="headerlink" href="#go-test-的原理" title="Permanent link">&para;</a></h2>
+<p>go test 是 go 内置的测试框架。</p>
+<p>在一个包内执行 go test 后，go test 会首先编译目标包 (被测试包)，然后编译测试包，即目录下所有以 _test.go 为后缀的源文件。go test 会将测试包编译为一个可执行的文件，这个可执行文件的 main 包会依赖并导入测试包，并且会调用测试包中的 TestXxx 导出方法执行测试。</p>
+<h2 id="最终真相">最终真相<a class="headerlink" href="#最终真相" title="Permanent link">&para;</a></h2>
+<p>首先采用 <code>go test -work</code> 命令，并查看 go test 执行生成的可执行文件的 main 函数所在的文件夹。</p>
+<div class="highlight"><pre><span></span><code>vscode@VM-8-10-ubuntu:~/desktop/goprogramming/46$<span class="w"> </span>go<span class="w"> </span><span class="nb">test</span><span class="w"> </span>-work
+<span class="nv">WORK</span><span class="o">=</span>/tmp/go-build294647016
+<span class="c1"># main.test</span>
+/tmp/go-build294647016/b001/_testmain.go:14:8:<span class="w"> </span>could<span class="w"> </span>not<span class="w"> </span>import<span class="w"> </span>main<span class="w"> </span><span class="o">(</span>cannot<span class="w"> </span>import<span class="w"> </span><span class="s2">&quot;main&quot;</span><span class="o">)</span>
+FAIL<span class="w">    </span>main<span class="w"> </span><span class="o">[</span>build<span class="w"> </span>failed<span class="o">]</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>vscode@VM-8-10-ubuntu:~/desktop/goprogramming/46$<span class="w"> </span>cat<span class="w"> </span>/tmp/go-build294647016/b001/_testmain.go
+
+//<span class="w"> </span>Code<span class="w"> </span>generated<span class="w"> </span>by<span class="w"> </span><span class="s1">&#39;go test&#39;</span>.<span class="w"> </span>DO<span class="w"> </span>NOT<span class="w"> </span>EDIT.
+
+package<span class="w"> </span>main
+
+import<span class="w"> </span><span class="o">(</span>
+<span class="w">        </span><span class="s2">&quot;os&quot;</span>
+<span class="w">        </span><span class="s2">&quot;testing&quot;</span>
+<span class="w">        </span><span class="s2">&quot;testing/internal/testdeps&quot;</span>
+
+<span class="w">        </span>_test<span class="w"> </span><span class="s2">&quot;main&quot;</span>
+<span class="o">)</span>
+
+var<span class="w"> </span><span class="nv">tests</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">[]</span>testing.InternalTest<span class="o">{</span>
+<span class="w">        </span><span class="o">{</span><span class="s2">&quot;TestAdd&quot;</span>,<span class="w"> </span>_test.TestAdd<span class="o">}</span>,
+<span class="o">}</span>
+
+var<span class="w"> </span><span class="nv">benchmarks</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">[]</span>testing.InternalBenchmark<span class="o">{</span>
+<span class="o">}</span>
+
+var<span class="w"> </span><span class="nv">fuzzTargets</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">[]</span>testing.InternalFuzzTarget<span class="o">{</span>
+<span class="o">}</span>
+
+var<span class="w"> </span><span class="nv">examples</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">[]</span>testing.InternalExample<span class="o">{</span>
+<span class="o">}</span>
+
+func<span class="w"> </span>init<span class="o">()</span><span class="w"> </span><span class="o">{</span>
+<span class="w">        </span>testdeps.ImportPath<span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;main&quot;</span>
+<span class="o">}</span>
+
+func<span class="w"> </span>main<span class="o">()</span><span class="w"> </span><span class="o">{</span>
+<span class="w">        </span>m<span class="w"> </span>:<span class="o">=</span><span class="w"> </span>testing.MainStart<span class="o">(</span>testdeps.TestDeps<span class="o">{}</span>,<span class="w"> </span>tests,<span class="w"> </span>benchmarks,<span class="w"> </span>fuzzTargets,<span class="w"> </span>examples<span class="o">)</span>
+<span class="w">        </span>os.Exit<span class="o">(</span>m.Run<span class="o">())</span>
+<span class="o">}</span>
+</code></pre></div>
+<p>我们所看到的这就是我们编译出来的测试可执行文件的 main 包和 main 函数内容，其中最为关键的一行是：</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="p">(</span>
+<span class="w">        </span><span class="c1">// ...</span>
+<span class="w">        </span><span class="nx">_test</span><span class="w"> </span><span class="s">&quot;main&quot;</span>
+<span class="w">        </span><span class="c1">// ...</span>
+<span class="p">)</span>
+</code></pre></div>
+<p>首先我们解释这里为什么是“main”。根据我们之前复习的 go module 下 package 导入路径的定义，这里的 main 其实是测试包的导入路径。同时我们前面说了，这个测试包作为顶层包，其导入路径就是 module-path，而我们这里的 module-path 是 main，因此这里的路径为“main”。</p>
+<p>因此问题就来了，这个 _testmain.go 是 go test 生成的测试可执行程序的 main 包，并且很有可能其导入路径就是 "main"，而现在又多出一个导入路径为 “main” 的，因此会产生循环调用的问题。（自己 import 了自己）</p>
+<p>其次，需要说明的是，如果我们的测试包包名为 main（虽然这么命名 test 所在的包的可能是在报复社会），只要导入路径不是单纯的一个 "main"，那么就可以正常运行）即便这个测试包包名同样为 main。</p>
+<p>即如果自己本身的导入路径包含在 <span class="arithmatex">\(\in\)</span> import 包的导入路径，那么肯定 import cycle 了，会报错。如果自己包的包名和被导入包的包名相同，那么无事发生。因此我们可以知道，go test 构建出来的 main 包，其导入路径为 "main"。</p>
+<p>因此我们只需要重命名 module path，那么 go test 就可以正常执行了。</p>
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      最后更新:
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">2023年8月11日 10:45:38</span>
+      
+        <br>
+        创建日期:
+        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">2023年8月11日 10:45:38</span>
+      
+    
+  </small>
+</div>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            回到页面顶部
+          </button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright © 2022 Apostle-lemon
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://github.com/Apostle-lemon" target="_blank" rel="noopener" title="github" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../../../../..", "features": ["content.code.annotate", "navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.indexes", "navigation.top", "search.highlight", "search.share"], "search": "../../../../../assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    
+    
+      <script src="../../../../../assets/javascripts/bundle.220ee61c.min.js"></script>
+      
+        
+          <script src="../../../../../javascripts/mathjax.js"></script>
+        
+      
+        
+          <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        
+      
+        
+          <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        
+      
+    
+  </body>
+</html>

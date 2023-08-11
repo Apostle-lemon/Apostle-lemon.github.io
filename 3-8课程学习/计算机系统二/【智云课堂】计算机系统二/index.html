@@ -1,0 +1,2291 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="Apostle-lemon">
+      
+      
+        <link rel="canonical" href="https://apostle-lemon.github.io./3-8%E8%AF%BE%E7%A8%8B%E5%AD%A6%E4%B9%A0/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E4%BA%8C/%E3%80%90%E6%99%BA%E4%BA%91%E8%AF%BE%E5%A0%82%E3%80%91%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E4%BA%8C/">
+      
+      
+        <link rel="prev" href="../../%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E3%80%90%E8%A7%86%E9%A2%91%E3%80%91%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">
+      
+      
+        <link rel="next" href="../../%E4%B8%8D%E6%83%B3%E5%AD%A6%E4%BA%86/">
+      
+      <link rel="icon" href="../../../img/yileina.ico">
+      <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.1.21">
+    
+    
+      
+        <title>[智云课堂] 计算机系统二 - lemon🍋</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.eebd395e.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ecc896b0.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../../../css/extra.css">
+    
+      <link rel="stylesheet" href="../../../css/color.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="blue-grey" data-md-color-accent="yellow">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#智云课堂-计算机系统二" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../../.." title="lemon🍋" class="md-header__button md-logo" aria-label="lemon🍋" data-md-component="logo">
+      
+  <img src="../../../img/yileina2.jpeg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            lemon🍋
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              [智云课堂] 计算机系统二
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="分享" aria-label="分享" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Apostle-lemon" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    🍋的github主页
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../.." class="md-tabs__link">
+      是柠檬
+    </a>
+  </li>
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E3%80%90%E8%A7%86%E9%A2%91%E3%80%91%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" class="md-tabs__link md-tabs__link--active">
+        课程学习
+      </a>
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../%E7%9F%A5%E8%AF%86%E6%AC%A2%E6%84%89/store/mongodb/mongodb%E5%9F%BA%E7%A1%80%E7%94%A8%E6%B3%95/" class="md-tabs__link">
+        知识欢愉
+      </a>
+    </li>
+  
+
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="lemon🍋" class="md-nav__button md-logo" aria-label="lemon🍋" data-md-component="logo">
+      
+  <img src="../../../img/yileina2.jpeg" alt="logo">
+
+    </a>
+    lemon🍋
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Apostle-lemon" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    🍋的github主页
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        是柠檬
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          课程学习
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          课程学习
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+          计算机网络
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2_1">
+          <span class="md-nav__icon md-icon"></span>
+          计算机网络
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E3%80%90%E8%A7%86%E9%A2%91%E3%80%91%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" class="md-nav__link">
+        [视频] 计算机网络
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+          计算机系统二
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_2_2">
+          <span class="md-nav__icon md-icon"></span>
+          计算机系统二
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          [智云课堂] 计算机系统二
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        [智云课堂] 计算机系统二
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#course-infomation-and-policy" class="md-nav__link">
+    Course Infomation and Policy
+  </a>
+  
+    <nav class="md-nav" aria-label="Course Infomation and Policy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#推荐书籍" class="md-nav__link">
+    推荐书籍
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+    <nav class="md-nav" aria-label="Introduction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#operating-system-definition" class="md-nav__link">
+    Operating System Definition
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hardware-components" class="md-nav__link">
+    Hardware Components
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#devices" class="md-nav__link">
+    Devices
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interrupts-and-traps" class="md-nav__link">
+    Interrupts and Traps
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interrupt-handling" class="md-nav__link">
+    Interrupt Handling
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#io-from-system-call-to-devices-and-back" class="md-nav__link">
+    IO From System Call to Devices, and Back
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dma-direct-memory-access" class="md-nav__link">
+    DMA Direct Memory Access
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#numa" class="md-nav__link">
+    NUMA
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operating-system-sperations-multitasking" class="md-nav__link">
+    Operating System Sperations: Multitasking
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dual-mode-operation" class="md-nav__link">
+    Dual-mode Operation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#process-management-activities" class="md-nav__link">
+    Process Management Activities
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#thread" class="md-nav__link">
+    Thread
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mmu-memory-management-unit" class="md-nav__link">
+    MMU Memory Management Unit
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resource-management-file-system" class="md-nav__link">
+    Resource Management File System
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resource-management-io-system-management" class="md-nav__link">
+    Resource Management: I/O System Management
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#separate-policy-and-mechanism" class="md-nav__link">
+    Separate Policy and Mechanism
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#虚拟化" class="md-nav__link">
+    虚拟化
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#os-services--structures" class="md-nav__link">
+    Os Services &amp; Structures
+  </a>
+  
+    <nav class="md-nav" aria-label="Os Services & Structures">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cliguitouchscreen-interfacesvoice-command" class="md-nav__link">
+    CLI，GUI，Touchscreen Interfaces，Voice Command
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#system-calls" class="md-nav__link">
+    System Calls
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#application-programming-interface" class="md-nav__link">
+    Application Programming Interface
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#types-of-system-calls" class="md-nav__link">
+    Types of System Calls
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-语言中的-fork" class="md-nav__link">
+    C 语言中的 Fork
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#case-study-ioctl" class="md-nav__link">
+    Case Study Ioctl
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linkers--loaders" class="md-nav__link">
+    Linkers &amp; Loaders
+  </a>
+  
+    <nav class="md-nav" aria-label="Linkers & Loaders">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#动态链接" class="md-nav__link">
+    动态链接
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operating-system-structure" class="md-nav__link">
+    Operating System Structure
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#process" class="md-nav__link">
+    Process
+  </a>
+  
+    <nav class="md-nav" aria-label="Process">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#process-state" class="md-nav__link">
+    Process State
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#process-control-block-pcb" class="md-nav__link">
+    Process Control Block PCB
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#thread_1" class="md-nav__link">
+    Thread
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#process-creation" class="md-nav__link">
+    Process Creation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#process-termination" class="md-nav__link">
+    Process Termination
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#android-process-importance-hierarchy" class="md-nav__link">
+    Android Process Importance Hierarchy
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interprocess-communication" class="md-nav__link">
+    Interprocess Communication
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remote-procedure-call-rpc" class="md-nav__link">
+    Remote Procedure Call RPC
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#thread_2" class="md-nav__link">
+    Thread
+  </a>
+  
+    <nav class="md-nav" aria-label="Thread">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#thread-cancellation" class="md-nav__link">
+    Thread Cancellation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#thread-specific-data--tls" class="md-nav__link">
+    Thread Specific Data &amp; TLS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lightweight-process--scheduler-activities" class="md-nav__link">
+    Lightweight Process &amp; Scheduler Activities
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linux-thread" class="md-nav__link">
+    Linux Thread
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#thread-library" class="md-nav__link">
+    Thread Library
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linux-thread_1" class="md-nav__link">
+    Linux Thread
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cpu-scheduling" class="md-nav__link">
+    CPU Scheduling
+  </a>
+  
+    <nav class="md-nav" aria-label="CPU Scheduling">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basic-concepts" class="md-nav__link">
+    Basic Concepts
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scheduling-criteria-调度的准则" class="md-nav__link">
+    Scheduling Criteria 调度的准则
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#algorithm-调度的算法" class="md-nav__link">
+    Algorithm 调度的算法
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#thread-scheduling" class="md-nav__link">
+    Thread Scheduling
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multiple-processor-scheduling-多处理器的调度" class="md-nav__link">
+    Multiple-processor Scheduling 多处理器的调度
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-really-happened-on-mars" class="md-nav__link">
+    What Really Happened on Mars
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#synchronization" class="md-nav__link">
+    Synchronization
+  </a>
+  
+    <nav class="md-nav" aria-label="Synchronization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#race-condition" class="md-nav__link">
+    Race Condition
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#critical-section" class="md-nav__link">
+    Critical Section
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solution-to-critical-section-three-requirements" class="md-nav__link">
+    Solution to Critical-section: Three Requirements
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sequential-consistency-sc" class="md-nav__link">
+    Sequential Consistency (SC)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hardware-instructions" class="md-nav__link">
+    Hardware Instructions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#semaphore-信号量" class="md-nav__link">
+    Semaphore 信号量
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#synchronization-examples" class="md-nav__link">
+    Synchronization Examples
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+          计算理论
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2_3">
+          <span class="md-nav__icon md-icon"></span>
+          计算理论
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E4%B8%8D%E6%83%B3%E5%AD%A6%E4%BA%86/" class="md-nav__link">
+        你好
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+          编译原理
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2_4">
+          <span class="md-nav__icon md-icon"></span>
+          编译原理
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/%E3%80%90%E4%B8%8A%E8%AF%BE%E3%80%91%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/" class="md-nav__link">
+        编译原理
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          知识欢愉
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          知识欢愉
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+          mongodb
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_1">
+          <span class="md-nav__icon md-icon"></span>
+          mongodb
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E7%9F%A5%E8%AF%86%E6%AC%A2%E6%84%89/store/mongodb/mongodb%E5%9F%BA%E7%A1%80%E7%94%A8%E6%B3%95/" class="md-nav__link">
+        Mongodb
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E7%9F%A5%E8%AF%86%E6%AC%A2%E6%84%89/store/mongodb/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%20Go%20%E8%BF%9E%E6%8E%A5%E8%BF%9C%E7%A8%8B%20Linux-mongodb/" class="md-nav__link">
+        如何使用 Go 连接远程 Linux-mongodb
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+          语言相关
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          语言相关
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_1" >
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_2_1" id="__nav_3_2_1_label" tabindex="0">
+          golang
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_1_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_2_1">
+          <span class="md-nav__icon md-icon"></span>
+          golang
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_1_1" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_2_1_1" id="__nav_3_2_1_1_label" tabindex="0">
+          归档
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_2_1_1_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_2_1_1">
+          <span class="md-nav__icon md-icon"></span>
+          归档
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E7%9F%A5%E8%AF%86%E6%AC%A2%E6%84%89/%E8%AF%AD%E8%A8%80%E7%9B%B8%E5%85%B3/golang/%E5%BD%92%E6%A1%A3/Go%20%E6%97%A0%E6%B3%95%E5%AF%B9%20main%20%E6%A8%A1%E5%9D%97%E6%89%A7%E8%A1%8C%E6%B5%8B%E8%AF%95/" class="md-nav__link">
+        Go 无法对 Main 模块执行测试
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_1_2" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_2_1_2" id="__nav_3_2_1_2_label" tabindex="0">
+          go精进之路
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_2_1_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_2_1_2">
+          <span class="md-nav__icon md-icon"></span>
+          go精进之路
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E7%9F%A5%E8%AF%86%E6%AC%A2%E6%84%89/%E8%AF%AD%E8%A8%80%E7%9B%B8%E5%85%B3/golang/Go%E8%AF%AD%E8%A8%80%E7%B2%BE%E8%BF%9B%E4%B9%8B%E8%B7%AF/40%20%E5%8C%85%E5%86%85%E6%B5%8B%E8%AF%95%E4%B8%8E%E5%8C%85%E5%A4%96%E6%B5%8B%E8%AF%95%E7%9A%84%E5%8C%BA%E5%88%AB/" class="md-nav__link">
+        包内测试与包外测试的区别
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E7%9F%A5%E8%AF%86%E6%AC%A2%E6%84%89/%E8%AF%AD%E8%A8%80%E7%9B%B8%E5%85%B3/golang/Go%E8%AF%AD%E8%A8%80%E7%B2%BE%E8%BF%9B%E4%B9%8B%E8%B7%AF/41%20%E6%9C%89%E5%B1%82%E6%AC%A1%E5%9C%B0%E7%BB%84%E7%BB%87%E6%B5%8B%E8%AF%95%E4%BB%A3%E7%A0%81/" class="md-nav__link">
+        41 有层次地组织测试代码
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E7%9F%A5%E8%AF%86%E6%AC%A2%E6%84%89/%E8%AF%AD%E8%A8%80%E7%9B%B8%E5%85%B3/golang/Go%E8%AF%AD%E8%A8%80%E7%B2%BE%E8%BF%9B%E4%B9%8B%E8%B7%AF/42%20%E4%BC%98%E5%85%88%E7%BC%96%E5%86%99%E8%A1%A8%E9%A9%B1%E5%8A%A8%E7%9A%84%E6%B5%8B%E8%AF%95/" class="md-nav__link">
+        42 优先编写表驱动的测试
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E7%9F%A5%E8%AF%86%E6%AC%A2%E6%84%89/%E8%AF%AD%E8%A8%80%E7%9B%B8%E5%85%B3/golang/Go%E8%AF%AD%E8%A8%80%E7%B2%BE%E8%BF%9B%E4%B9%8B%E8%B7%AF/43%20%E4%BD%BF%E7%94%A8%20testdata%20%E7%AE%A1%E7%90%86%E6%B5%8B%E8%AF%95%E4%BE%9D%E8%B5%96%E7%9A%84%E5%A4%96%E9%83%A8%E6%95%B0%E6%8D%AE%E6%96%87%E4%BB%B6/" class="md-nav__link">
+        43 使用 Testdata 管理测试依赖的外部数据文件
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E7%9F%A5%E8%AF%86%E6%AC%A2%E6%84%89/%E8%AF%AD%E8%A8%80%E7%9B%B8%E5%85%B3/golang/Go%E8%AF%AD%E8%A8%80%E7%B2%BE%E8%BF%9B%E4%B9%8B%E8%B7%AF/44%20%E6%AD%A3%E7%A1%AE%E8%BF%90%E7%94%A8%20fake%20stub%20%E5%92%8C%20mock%20%E7%AD%89%E8%BE%85%E5%8A%A9%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/" class="md-nav__link">
+        44 正确运用 Fake Stub 和 Mock 等辅助单元测试
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#course-infomation-and-policy" class="md-nav__link">
+    Course Infomation and Policy
+  </a>
+  
+    <nav class="md-nav" aria-label="Course Infomation and Policy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#推荐书籍" class="md-nav__link">
+    推荐书籍
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+    <nav class="md-nav" aria-label="Introduction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#operating-system-definition" class="md-nav__link">
+    Operating System Definition
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hardware-components" class="md-nav__link">
+    Hardware Components
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#devices" class="md-nav__link">
+    Devices
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interrupts-and-traps" class="md-nav__link">
+    Interrupts and Traps
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interrupt-handling" class="md-nav__link">
+    Interrupt Handling
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#io-from-system-call-to-devices-and-back" class="md-nav__link">
+    IO From System Call to Devices, and Back
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dma-direct-memory-access" class="md-nav__link">
+    DMA Direct Memory Access
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#numa" class="md-nav__link">
+    NUMA
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operating-system-sperations-multitasking" class="md-nav__link">
+    Operating System Sperations: Multitasking
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dual-mode-operation" class="md-nav__link">
+    Dual-mode Operation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#process-management-activities" class="md-nav__link">
+    Process Management Activities
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#thread" class="md-nav__link">
+    Thread
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mmu-memory-management-unit" class="md-nav__link">
+    MMU Memory Management Unit
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resource-management-file-system" class="md-nav__link">
+    Resource Management File System
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resource-management-io-system-management" class="md-nav__link">
+    Resource Management: I/O System Management
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#separate-policy-and-mechanism" class="md-nav__link">
+    Separate Policy and Mechanism
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#虚拟化" class="md-nav__link">
+    虚拟化
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#os-services--structures" class="md-nav__link">
+    Os Services &amp; Structures
+  </a>
+  
+    <nav class="md-nav" aria-label="Os Services & Structures">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cliguitouchscreen-interfacesvoice-command" class="md-nav__link">
+    CLI，GUI，Touchscreen Interfaces，Voice Command
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#system-calls" class="md-nav__link">
+    System Calls
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#application-programming-interface" class="md-nav__link">
+    Application Programming Interface
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#types-of-system-calls" class="md-nav__link">
+    Types of System Calls
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-语言中的-fork" class="md-nav__link">
+    C 语言中的 Fork
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#case-study-ioctl" class="md-nav__link">
+    Case Study Ioctl
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linkers--loaders" class="md-nav__link">
+    Linkers &amp; Loaders
+  </a>
+  
+    <nav class="md-nav" aria-label="Linkers & Loaders">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#动态链接" class="md-nav__link">
+    动态链接
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operating-system-structure" class="md-nav__link">
+    Operating System Structure
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#process" class="md-nav__link">
+    Process
+  </a>
+  
+    <nav class="md-nav" aria-label="Process">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#process-state" class="md-nav__link">
+    Process State
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#process-control-block-pcb" class="md-nav__link">
+    Process Control Block PCB
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#thread_1" class="md-nav__link">
+    Thread
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#process-creation" class="md-nav__link">
+    Process Creation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#process-termination" class="md-nav__link">
+    Process Termination
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#android-process-importance-hierarchy" class="md-nav__link">
+    Android Process Importance Hierarchy
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interprocess-communication" class="md-nav__link">
+    Interprocess Communication
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remote-procedure-call-rpc" class="md-nav__link">
+    Remote Procedure Call RPC
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#thread_2" class="md-nav__link">
+    Thread
+  </a>
+  
+    <nav class="md-nav" aria-label="Thread">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#thread-cancellation" class="md-nav__link">
+    Thread Cancellation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#thread-specific-data--tls" class="md-nav__link">
+    Thread Specific Data &amp; TLS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lightweight-process--scheduler-activities" class="md-nav__link">
+    Lightweight Process &amp; Scheduler Activities
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linux-thread" class="md-nav__link">
+    Linux Thread
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#thread-library" class="md-nav__link">
+    Thread Library
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linux-thread_1" class="md-nav__link">
+    Linux Thread
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cpu-scheduling" class="md-nav__link">
+    CPU Scheduling
+  </a>
+  
+    <nav class="md-nav" aria-label="CPU Scheduling">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basic-concepts" class="md-nav__link">
+    Basic Concepts
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scheduling-criteria-调度的准则" class="md-nav__link">
+    Scheduling Criteria 调度的准则
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#algorithm-调度的算法" class="md-nav__link">
+    Algorithm 调度的算法
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#thread-scheduling" class="md-nav__link">
+    Thread Scheduling
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multiple-processor-scheduling-多处理器的调度" class="md-nav__link">
+    Multiple-processor Scheduling 多处理器的调度
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-really-happened-on-mars" class="md-nav__link">
+    What Really Happened on Mars
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#synchronization" class="md-nav__link">
+    Synchronization
+  </a>
+  
+    <nav class="md-nav" aria-label="Synchronization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#race-condition" class="md-nav__link">
+    Race Condition
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#critical-section" class="md-nav__link">
+    Critical Section
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solution-to-critical-section-three-requirements" class="md-nav__link">
+    Solution to Critical-section: Three Requirements
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sequential-consistency-sc" class="md-nav__link">
+    Sequential Consistency (SC)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hardware-instructions" class="md-nav__link">
+    Hardware Instructions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#semaphore-信号量" class="md-nav__link">
+    Semaphore 信号量
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#synchronization-examples" class="md-nav__link">
+    Synchronization Examples
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="智云课堂-计算机系统二">[智云课堂] 计算机系统二<a class="headerlink" href="#智云课堂-计算机系统二" title="Permanent link">&para;</a></h1>
+<h2 id="course-infomation-and-policy">Course Infomation and Policy<a class="headerlink" href="#course-infomation-and-policy" title="Permanent link">&para;</a></h2>
+<p>课堂上以 linux 操作系统为例，具体实现方式视不同操作系统为准。</p>
+<h3 id="推荐书籍">推荐书籍<a class="headerlink" href="#推荐书籍" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Operating System Concepts - 10<sup>th</sup></li>
+<li>Opearating System : Three Easy Pieces</li>
+</ul>
+<p>在这两本书之中，老师更推荐第二本书。第一本书会介绍很多以前的计算机操作系统应当如何进行设计的内容。操作系统是与硬件紧密耦合的，但是当时的硬件系统，在今天来看只能得知一个概念，这使得学习非常得肤浅，不能 make your hands dirty（进行实践）。而第二本书，不仅更加前沿，并且更加通俗易懂。</p>
+<p>害，这里老师说虽然不推荐第一本书，但还是选择在第一本书上选择题目，因为有些题目题型虽然无聊，但是会在考研题目出现，为了防止我们吃亏，还是在这本书上进行出题。</p>
+<p>独立完成并不代表自己闷头做，不和同学交流，不向他人求助。</p>
+<p>周老师的这些观点，我是非常认同的，我自己的学习经历得出的是同样的结论。</p>
+<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
+<h3 id="operating-system-definition">Operating System Definition<a class="headerlink" href="#operating-system-definition" title="Permanent link">&para;</a></h3>
+<p>Kernal 内核，is the program running at all times on the computer。运行在特权态，管理分配硬件资源。<code>这门课的‘操作系统’是指这个，而不包括 system program</code> 操作系统存放在 disk 上，运行时被加载到内存当中，由 CPU 进行执行。</p>
+<h3 id="hardware-components">Hardware Components<a class="headerlink" href="#hardware-components" title="Permanent link">&para;</a></h3>
+<p>Direct Memory Access DMA 部件。可以直接控制 memory。DMA 和 CPU 都可以直接访问 memory，这可能会产生数据不一致性。这个数据不一致性可以由硬件协议加以解决。</p>
+<h3 id="devices">Devices<a class="headerlink" href="#devices" title="Permanent link">&para;</a></h3>
+<p>devices controller 设备控制器。每一个设备控制器会存在一个 local buffer。I/O 是发生在 device 和设备控制器的 buffer 之间的。CPU 的数据移动是在 main memory 和设备控制器的 buffer 之间。</p>
+<p>CPU 想要控制 devices controller，可以通过两种方式进行操作。第一种是通过特定的 io instruction，这种指令后便会跟 port 的地址。这是一种现代很少见的方式。今天的主流方式是 MMIO，Memory map IO,内存映射型 IO 访问。</p>
+<h3 id="interrupts-and-traps">Interrupts and Traps<a class="headerlink" href="#interrupts-and-traps" title="Permanent link">&para;</a></h3>
+<p>interrupt vector 中断向量，一个由 service routines 地址组成的表格。dispatch 中断分发。</p>
+<p>interrupt handler 会存储被中断时候的状态</p>
+<p>trap。类似于 system call，devided-by-zero 都会触发 trap。trap 也可以被理解为 soft-interrupt，即软中断。interrupt 中断不加前缀词通常指的是硬中断。trap 也可以被叫做 exception。</p>
+<p>操作系统是 interrupt-driven 的。有一种中断为 timer 定时器中断，有了定时器中断才可以有内核代码的执行，进行资源的调度。</p>
+<h3 id="interrupt-handling">Interrupt Handling<a class="headerlink" href="#interrupt-handling" title="Permanent link">&para;</a></h3>
+<p>有两种方式可以处理中断。polling 和 vectored interrupt system。</p>
+<h3 id="io-from-system-call-to-devices-and-back">IO From System Call to Devices, and Back<a class="headerlink" href="#io-from-system-call-to-devices-and-back" title="Permanent link">&para;</a></h3>
+<p>步骤大致为如下</p>
+<ul>
+<li>program 进行 system call 获得 system resources</li>
+<li>操作系统发送 io requests<ul>
+<li>io requests 被发送给 device driver，之后会发送给 controller</li>
+</ul>
+</li>
+<li>OS 可能会让程序等待 block,这种方式叫做同步 IO，也可能直接返回程序，这种方式叫做异步 IO</li>
+<li>IO 结束，IO 控制器 interupt OS</li>
+<li>OS 处理 IO 的结果，之后 wakes up the program，或者向程序发送一个 signal</li>
+</ul>
+<h3 id="dma-direct-memory-access">DMA Direct Memory Access<a class="headerlink" href="#dma-direct-memory-access" title="Permanent link">&para;</a></h3>
+<p>DMA 是高速 IO 设备用来传输数据的，可以以一种接近 memory speed 的速度进行 io。device driver 会发送一个 io descriptor 给 controller。这个 io descriptor 内部含有 operation type, memory address 之类的信息。controller 可以通过 DMA，直接在 local buffer 和 main memory 之间进行数据转移，而不需要 CPU intervention。</p>
+<p>可能会存在缓存一致性问题。IO MMU input/output memory management unit, 用来表示 physical memory 是暴露给 dma 的。</p>
+<h3 id="numa">NUMA<a class="headerlink" href="#numa" title="Permanent link">&para;</a></h3>
+<p>Non-Uniform memory access system。每一个 cpu 都有自己的 physical memory，但是 memory 的地址是同一编址的。</p>
+<h3 id="operating-system-sperations-multitasking">Operating System Sperations: Multitasking<a class="headerlink" href="#operating-system-sperations-multitasking" title="Permanent link">&para;</a></h3>
+<p>也被称为 timesharing。就是把 CPU 的运行分为时间片，每个时间片分配给不同的 jobs。</p>
+<h3 id="dual-mode-operation">Dual-mode Operation<a class="headerlink" href="#dual-mode-operation" title="Permanent link">&para;</a></h3>
+<p>dual-mode 就是分为了 user mode 和 kernal mode<br />
+system call 会将 mode 转换为 kernel 状态</p>
+<p>risc-v 当中存在三种模式，user 模式。s 模式，这是内核运行的模式。M 模式，这是系统刚起来时运行的固件代码。</p>
+<h3 id="process-management-activities">Process Management Activities<a class="headerlink" href="#process-management-activities" title="Permanent link">&para;</a></h3>
+<p>进程是处于运行状态的 program。程序 program 为在存储上可执行的一段文件。
+进程是资源分配的最小单元，线程是调度的最小单元。</p>
+<p><img alt="" src="../../img/9506c1b4b0f20d2495bc1f316c25fa5d_MD5.png" /></p>
+<h3 id="thread">Thread<a class="headerlink" href="#thread" title="Permanent link">&para;</a></h3>
+<p>线程。不同进程之间可以通过操作系统提供的进程之间交流的原语，或者共享内存的方式实现数据的共享，但是存在问题：开销过大。</p>
+<p>通过 multi-threaded process，使得每个 thread 都具有一个 program counter。每一个线程可以被单独的调度，并且开销资源小。多个线程共享这个进程的数据 memory, global data, heap 和代码。注意 pc 和 stack 是不共享的（虽然 stack 并不是隔离的）。</p>
+<p>①可被调度的最小基本单元改为了线程。
+②进程是资源共享的最小基本单元。</p>
+<p>CPU 处于空闲状态时，会运行内核状态中一段特殊的代码。（可以简化理解为 while 1，虽然并不是）</p>
+<h3 id="mmu-memory-management-unit">MMU Memory Management Unit<a class="headerlink" href="#mmu-memory-management-unit" title="Permanent link">&para;</a></h3>
+<p>MMU 可以在虚拟内存和实际内存之间创建一个映射表。</p>
+<h3 id="resource-management-file-system">Resource Management File System<a class="headerlink" href="#resource-management-file-system" title="Permanent link">&para;</a></h3>
+<p>不怎么涉及。</p>
+<h3 id="resource-management-io-system-management">Resource Management: I/O System Management<a class="headerlink" href="#resource-management-io-system-management" title="Permanent link">&para;</a></h3>
+<p>分成三个步骤：buffering，caching（将内容从 storage 中读出放入 内存中），spooling(不同外设的输入输出可以相接)。</p>
+<p>操作系统会提供设备驱动程序。</p>
+<p>手机上，将不同的用户的用户 ID 设置为不一样，再加上设定特定的 access control，可以使得进程之间文件的隔离。</p>
+<h3 id="separate-policy-and-mechanism">Separate Policy and Mechanism<a class="headerlink" href="#separate-policy-and-mechanism" title="Permanent link">&para;</a></h3>
+<p>Mechanism: how question about a system。如何完成上下文的切换。</p>
+<p>Policy: which question。哪个进程应当被切换进来。</p>
+<h3 id="虚拟化">虚拟化<a class="headerlink" href="#虚拟化" title="Permanent link">&para;</a></h3>
+<p>使得进程认为自己完整拥有硬件资源。</p>
+<p>Abstractthe hardware of a single computer (CPU/Memory/IO…) into different environments。</p>
+<h2 id="os-services--structures">Os Services &amp; Structures<a class="headerlink" href="#os-services--structures" title="Permanent link">&para;</a></h2>
+<p>所谓的 services 就是指操作系统向用户程序提供了什么服务</p>
+<ul>
+<li>User Interface 用户接口，UI</li>
+<li>program execution</li>
+<li>IO operation</li>
+<li>file-system manipulation</li>
+<li>communication</li>
+<li>error detection</li>
+<li>resource allocation</li>
+<li>accounting/logging</li>
+<li>protection and security</li>
+</ul>
+<h3 id="cliguitouchscreen-interfacesvoice-command">CLI，GUI，Touchscreen Interfaces，Voice Command<a class="headerlink" href="#cliguitouchscreen-interfacesvoice-command" title="Permanent link">&para;</a></h3>
+<p>命令要么是 built-in 的，要么是其他 program 的名字</p>
+<p>fork 会创建子进程，fork 会返回两次</p>
+<p>Touchscreen Interfaces 会存在安全隐患 clickjacking 点击劫持，叠加两个用户交互的界面，叠加在上层的界面是恶意软件的，后层是特定按钮。点击后触发的是后层的按钮。</p>
+<h3 id="system-calls">System Calls<a class="headerlink" href="#system-calls" title="Permanent link">&para;</a></h3>
+<p>一个 programming 接口，用来 access 操作系统的服务</p>
+<h3 id="application-programming-interface">Application Programming Interface<a class="headerlink" href="#application-programming-interface" title="Permanent link">&para;</a></h3>
+<p>API，程序通常不是直接进行系统调用，而是调用 API，可以看做是对系统调用进行了封装</p>
+<p>libc 系统库就提供了各种 API。API 隐藏了很多系统调用的细节。</p>
+<p>Systemcall 由内核中的异常处理程序进行。不同的系统调用是由系统调用号进行区分的，同样的系统调用在不同的架构下边系统调用号可能是不同的，一个系统号在一个架构下确定了的话，那么基本是不会发生改变的。[系统调用号] 如何传递到内核？这里存在多种方式。①可以通过寄存器进行传递，异常处理程序进行分发的时候则看传进来的参数的值。这是今天比较多的一种实现方式。②机器指令可以带操作数。</p>
+<p>系统调用参数的传递可以通过 ① register。缺点是寄存器的个数和大小都是固定的。② block 传递一连块内存，内存的地址通过寄存器传递 ③ stack。扯开：push 和 pop 指令是伪指令，编译器会替换为真正的机器指令。今天的 cpu 内部还真他妈有硬件栈，hardware stack，只不过其是透明的，会自动保存一份关键值到硬件栈中，如返回地址一类。return 指令时硬件层面会比较影子栈中的返回地址和当前返回是否一致。</p>
+<h3 id="types-of-system-calls">Types of System Calls<a class="headerlink" href="#types-of-system-calls" title="Permanent link">&para;</a></h3>
+<ul>
+<li>process control 操作系统内核在被引导完后，会主动创建出一个进程号为 1 的进程。会存在一个进程树。<code>kill -9 pid</code>，终止进程。load execute，加载新的。</li>
+<li>file managment</li>
+<li>information maintenance。getpid 所需要的具体花费很小，很大的开销放在了上下文的切换，因此经常用 getpid 来测试上下文切换的系统开销。</li>
+<li>communications。进程和进程之间共享 memory。默认时，进程和进程之间的内存空间是相互隔离的，由于操作系统做了内存虚拟化。</li>
+<li>protection</li>
+</ul>
+<h3 id="c-语言中的-fork">C 语言中的 Fork<a class="headerlink" href="#c-语言中的-fork" title="Permanent link">&para;</a></h3>
+<p>构造一个子进程，子进程是父进程的精确拷贝，但是 pid = fork () 这里的 pid 并不会被拷贝，因此可以通过判断 pid 来判断当前处于父进程还是子进程。fork() 会返回两次，对于父进程，其返回的值为 pid，对于子进程，其返回的值为 0。wait() 是父进程等待子进程的完成。</p>
+<p>lic.so 是加载的动态库，动态链接时并不在对应的可执行文件之中。</p>
+<h3 id="case-study-ioctl">Case Study Ioctl<a class="headerlink" href="#case-study-ioctl" title="Permanent link">&para;</a></h3>
+<p>ioctl 可以看作是一个通用的接口。</p>
+<h3 id="linkers--loaders">Linkers &amp; Loaders<a class="headerlink" href="#linkers--loaders" title="Permanent link">&para;</a></h3>
+<p>loader 是加载器，是 from program to process</p>
+<p>在运行时会有动态链接过程。</p>
+<p>通过静态链接方式，则代码都会被嵌入到最终的可执行文件内部。好处时自包含，不依赖于系统库代码。缺点是可执行文件大小非常大，加载的时候会比较慢。静态链接在不同的进程之间很难共享系统代码。即内存中可能会存在 printf（）的完整实现的多份拷贝。</p>
+<h4 id="动态链接">动态链接<a class="headerlink" href="#动态链接" title="Permanent link">&para;</a></h4>
+<p><img alt="" src="../../img/38011066ff9565db6d52f8c5d434133f_MD5.png" />  </p>
+<p>可以看到调用 printf 的时候会跳转到 488 处。做了两次 add 的操作，第一次 add 是将当前寄存器的值放到 ip 寄存器内部。第二次 add 是将 ip 加上了一个常数。第三次操作则是做了一次间接跳转，将 ip 加上 2904 处的值，放置到 pc 之中。这么说来在 0x2fe8 之中，就应该是 printf 函数在运行时在内存中的值。</p>
+<p>将 printf 函数的地址，填到 0x2fe8 这件事，一种做法是是由加载器加载可执行文件时即完成，ELF 文件会表明自己依赖于哪些系统库。加载器会根据库文件所在的路径，将 libc 加载到内存之中。还需要将 libc 中 printf 的地址放到 0x2fe8 之中。这里可以作证链接时候的行为会改变加载时候的行为。</p>
+<p>当然还有一种 延迟绑定 lazy binding 的方法，将更改 0x2fe8 处的值这件事放到真正调用 printf 时再去执行。这样可以在分支情况下合理的进行。</p>
+<p>动态链接使得①可执行文件的大小大量地减少了。②并且能够比较好的在不同的进程之间共享系统库。我们可以知道虚拟内存存在映射，因此只需要调整映射关系即可，可以在实际内存中只保留一份 libc。</p>
+<p>可以通过函数运行时等方式掩盖程序对 OS 的依赖。所谓的运行时，就是指一种虚拟机，最终是由 虚拟机 来执行的。虚拟机会判断环境，实现自己的实现。</p>
+<h3 id="operating-system-structure">Operating System Structure<a class="headerlink" href="#operating-system-structure" title="Permanent link">&para;</a></h3>
+<p>新设计操作系统内核，如何组织会更加合理。</p>
+<p>机制 mechanism：如何保存上下文进行切换<br />
+策略 policy：下一个要被调度的进程是什么</p>
+<p>整体内核：会分成用户态和内特态。内核中的各个模块是混杂在一起的，没有明显的界限，可以跨越 layer 进行调用。</p>
+<p>微内核：要使得在内核态运行的代码越少越好。这样可以减少 bug。可靠性，安全性，移植都很方便。缺点：性能开销过大，类似于文件系统之类的，传递数据给用户态程序，返回给用户态程序都需要进行上下文切换。</p>
+<p>外内核：在 kernal mode 只实现非常薄的 os 功能。具体的硬件如何访问交给用户态程序来抉择。</p>
+<p><img alt="" src="../../img/15633368f9db5a9ea9d9012da29c54df_MD5.png" /></p>
+<h2 id="process">Process<a class="headerlink" href="#process" title="Permanent link">&para;</a></h2>
+<p>进程的内存布局。注意这里 heap 的时候，是 libc 先向操作系统声明，表明 libc 需要一块地址。函数会调用 malloc 等 libc 的函数，是 libc 从自己已经声明过了的地址空间分配一块交给函数。这里需要说明的有两点。一是 libc 向操作系统声明需要空间的时候，操作系统不会真的就直接分配这么多内存给 libc，而是通过记账的方式。二是虽然在函数看来它独占了内存地址空间，但只有向 libc 申请过的系统空间才是可以正确的。</p>
+<p><img alt="" src="../../img/d5142508bda8fd7ae4c92a9e579716db_MD5.png" /></p>
+<h3 id="process-state">Process State<a class="headerlink" href="#process-state" title="Permanent link">&para;</a></h3>
+<p><img alt="" src="../../img/c7f7c5e836c975f4617a2f3223e8ce39_MD5.png" /></p>
+<h3 id="process-control-block-pcb">Process Control Block PCB<a class="headerlink" href="#process-control-block-pcb" title="Permanent link">&para;</a></h3>
+<p>你之所以觉得 PCB 非常耳熟，是因为电路板。
+内核也是一种程序，因此内核的运行也是需要 CPU 资源的。</p>
+<p>进程的上下文是保存在内核的 PCB 结构体当中的。PCB 是内核用来维护进程的一个结构。PCB 是一种逻辑概念。</p>
+<p>TODO: PCB 有什么东西打个草稿。</p>
+<h3 id="thread_1">Thread<a class="headerlink" href="#thread_1" title="Permanent link">&para;</a></h3>
+<p>CPU 调度器是内核的概念。</p>
+<p><strong>swap in/out</strong><br />
+解决了物理内存可能的不够用的场景。把一个进程用到的一些值放到 storge 中。当然这里不一定是 hard disk，因为 hard disk 的访问实在是太慢了。而是 swap 分区中。swap out 是指将进程占用的内存资源从物理内存中释放，将其放到 swap 分区当中，而 swap in 则是将进程保存在 swap 分区中的内存重新保存到物理内存之中。现代操作系统会 monitor 当前的内存压力，当觉得压力大的时候，会选择不太会被调度的进程的不太会被使用的 <strong>内存页</strong> 放出去。</p>
+<p>ABI 定义了函数调用时参数如何传递（栈，寄存器，block，参数较多时），以及返回时如何返回。</p>
+<h3 id="process-creation">Process Creation<a class="headerlink" href="#process-creation" title="Permanent link">&para;</a></h3>
+<p>系统内部所有的进程会形成一个进程树。</p>
+<h3 id="process-termination">Process Termination<a class="headerlink" href="#process-termination" title="Permanent link">&para;</a></h3>
+<p>exit：完成最后一条语句后，请求内核关闭<br />
+abort：父进程终结子进程<br />
+在 linux 中，允许父进程结束后，子进程仍然存在。这会使得存在僵尸进程和孤儿进程。子进程结束后，需要等待父进程调用 wait()，这时候父进程可能在做别的事情而没有调用 wait(), 这时候子进程就是僵尸进程。孤儿进程：父进程死了。这时候 systemd (永远不会消失的进程，1 号进程) 会取代父进程的角色，周期地发送 wait()。</p>
+<h3 id="android-process-importance-hierarchy">Android Process Importance Hierarchy<a class="headerlink" href="#android-process-importance-hierarchy" title="Permanent link">&para;</a></h3>
+<p>需要把不重要的进程给 kill 掉。</p>
+<h3 id="interprocess-communication">Interprocess Communication<a class="headerlink" href="#interprocess-communication" title="Permanent link">&para;</a></h3>
+<p>进程之间通过协作。共享内存或者消息传递。</p>
+<p>MMAP 可以使得一个虚拟地址空间和和一个 filedescripter 绑定，接下里我就不要再调用 read/write 对文件进行读写，而只需要对 虚拟地址空间 的相关内容进行修改即可。增加了程序的性能。</p>
+<h3 id="remote-procedure-call-rpc">Remote Procedure Call RPC<a class="headerlink" href="#remote-procedure-call-rpc" title="Permanent link">&para;</a></h3>
+<p>stub 桩，作函数参数的序列化和反序列化。stub 桩底层的实现机制就是 pipe，shared memory 或者 socket 接口。stub 会将参数 marshell 序列化，传递给另外一个进程 B，进程 B 中的 stub 会监听是否有人传递数据，如果有人传递数据就会进行反序列化。</p>
+<p>marshall 是很容易出错的。可以认为是一个进程很容易地就修改了另外一个进程的寄存器。RPC call 的 server 是比较危险的。如果暴露了过多的能力，那么<br />
+内存任意位置都会被更改。</p>
+<p>authenication 鉴权。server 根据进程自己传的 pid 和 uid 进行鉴权是不对的，因为来源并不是一个可信来源。只有内核才是可信来源（不然操作系统都不可信的话，那就没什么可信了）。</p>
+<h2 id="thread_2">Thread<a class="headerlink" href="#thread_2" title="Permanent link">&para;</a></h2>
+<p>虽然每一个 thread 有自己的 resource，例如 program counter, stack, registers 之类，但并不代表这些不同 thread 之间的资源是相互隔离的。不共享不代表隔离。线程共享了进程的虚拟地址空间。</p>
+<p>虚拟地址空间不是被 user space 独占的。而是由 user space 和 kernal space 一起共同占有 2^32 虚拟地址空间的。</p>
+<p>TODO：per-thread resource 有哪些</p>
+<p>多线程增加了系统的并发性。并行是指同一时刻有多个线程在执行，并发是指一段时间内有多个线程在执行。</p>
+<p>如果一个进程中的两个线程想被并行调用的话，则需要在内核中也实现线程的概念。如果内核中没有线程这个概念，那么仍然会按照进程的方式进行调度，这时候每次调用到划分为线程的进程时，运行时系统（一个用户态的调度器）会决定当前进程中的哪一个线程真正被调用。当然现在操作系统都支持内核线程这个概念。</p>
+<p>现在都是 one to one 的关系，即一个用户态线程对应一个内核线程。</p>
+<p>为什么需要 fork 之后立马用 exec 呢？这是因为我们想要有这样一种“子进程”的关系。但是我们不需要父进程的代码，数据，栈等等等等所有的。我们调用 exec 之后 pid 不会发生改变，但是其他的东西都会发生改变。</p>
+<h3 id="thread-cancellation">Thread Cancellation<a class="headerlink" href="#thread-cancellation" title="Permanent link">&para;</a></h3>
+<p>terminate a thread before it finish</p>
+<p>critical section 这一部分代码会涉及对 heap global 等资源的访问，在同一时刻，不同的 thread 中只能有一个 thread 在执行 critical section 部分的代码。</p>
+<p>为了防止不同 thread 访问 critical section 的紊乱，通常会采用 deferred cancellation。</p>
+<h3 id="thread-specific-data--tls">Thread Specific Data &amp; TLS<a class="headerlink" href="#thread-specific-data--tls" title="Permanent link">&para;</a></h3>
+<p>TLS, thread local storage allows each thread to have its own copy of data. 这里的所谓的 copy 就是指 tls 允许每个 thread 对一类全局变量有自己的一份拷贝。tls is unique to each thread.</p>
+<p>对于 TLS 类型的变量，编译器将类似于 <code>b=5</code> 这样的代码翻译为汇编的时候，不会采用简单的 load 和 store，而是会根据当前线程的 tid 进行一系列处理，例如在 global 中划出一个哈希表，表明地址的映射。</p>
+<p>pthread 提供了一些 API，可以帮助线程创建自己的 TLS。</p>
+<h3 id="lightweight-process--scheduler-activities">Lightweight Process &amp; Scheduler Activities<a class="headerlink" href="#lightweight-process--scheduler-activities" title="Permanent link">&para;</a></h3>
+<p>LWP is the intermediate data structure between the user and kernal thread in many-to-many and two level models. 每一个 lwp 对应一个 kernal thread。对于 user - thread 来说，这些 lwp 就像是 virtual processor.</p>
+<p>user thread 的运行时是 thread library。</p>
+<p>注意这里的 lwp 不是在 linux 内核中所指的 lwp。这里所讲的 lwp 是在用户态运行时中抽象出来的，和内核线程 1 to 1 mapping 的一个东西。</p>
+<h3 id="linux-thread">Linux Thread<a class="headerlink" href="#linux-thread" title="Permanent link">&para;</a></h3>
+<p>linux thread 有 fork 和 clone 这两个 system call。clone 会接收标志 flag，这些 flag 会决定 parent 和 children 中间有哪些资源是共享的。如果 no flag set，就代表 no sharing，那么这时候的 clone 就和 fork 是完全等价的。</p>
+<p>linux 是不会区分 process 和 thread 的。并且 linux 采用术语 task 替代 thread，毕竟两个实体之间可以 partially 共享资源，而 thread 是需要全部共享的。为了避免混淆，有时候也用 kernel scheduling entity 指代 kernel thread。</p>
+<h3 id="thread-library">Thread Library<a class="headerlink" href="#thread-library" title="Permanent link">&para;</a></h3>
+<p>提供 API 进行 creating and managing threads.</p>
+<p>pthread, java, win32 是三大 thread library。</p>
+<h3 id="linux-thread_1">Linux Thread<a class="headerlink" href="#linux-thread_1" title="Permanent link">&para;</a></h3>
+<p>linux 的 user level thread 遵循 POSIX 标准，Portable operating system interface for unix。
+在 linux 中，kernal thread 被认为是 light weight process. 也即在 linux 系统中，我们讲 LWP 的时候，指的就是内核线程。</p>
+<p><code>ps -elf</code> 这一列有一个 NLWP，如果这一列为 1，则代表当前进程只有一个线程。一个 user 下的 process 会有多个 LWP，这是因为 LWP 在 linux 语义下就是内核线程，而内核线程是与 user thread 一一对应的，因此一个 pid 可以有一堆 LWP。</p>
+<p>Linux 创造 lwp 是通过 clone() 系统调用，这个系统调用类似于 fork(), 但是更加通用。fork() 创建出来的子进程与父进程是完全隔离的。而 clone() 则会根据 flag 的不同而使得是否共享资源也有所不同。</p>
+<p>需要注意的是，在 fork（）的情况下，子进程会拷贝父进程的 fliedescripter，但是父进程和子进程不共享 memory。由于 filedescripter 是拷贝的形式，因此子进程关闭 filedescripter 并不会影响到父进程。clone 的场景底下，则会产生影响。进程和线程最本质的区别就是两者是否是同样的虚拟地址空间。如果 clone() 的时候使得不共享 filedescripter 的话，那么子线程是可以 close 自己的 filedescripter 而不影响到父线程的。</p>
+<h2 id="cpu-scheduling">CPU Scheduling<a class="headerlink" href="#cpu-scheduling" title="Permanent link">&para;</a></h2>
+<h3 id="basic-concepts">Basic Concepts<a class="headerlink" href="#basic-concepts" title="Permanent link">&para;</a></h3>
+<p>硬件 thread。现今的计算机的 processor 的一个 cor 中，可能存在多套的 register set，但是执行单元只有一套。也就是可以同时执行两个 thread。这两个在同一个 core 上面的执行过程的调度则交由 CPU 进行解决。从这种角度来看，可以看做是两个虚拟的 CPU。</p>
+<p>CPU burst 代表大部分的时间都在进行 CPU 的运算，IO burst 则代表大部分的时间都在用于 IO。</p>
+<p>抢占式调度与非抢占式调度。</p>
+<p>用户态调度，指的是从内核态返回到用户态之后，这个时刻需不需要进行调度。内核调度，指的是内核态下的进程发生了中断，中断完成返回时，是选择返回到这个内核态被打断的地方，还是调度另外一个线程实体进行执行。内核态不可抢占的程序，在用户态下仍然是可以抢占的。内核抢占可能会导致数据的不一致性，因此可能会采用两种方法，一种方法是将内核态设计为非抢占式的，另一种方法是将内核在操纵 shared data 的时候，设计为不可被抢占。</p>
+<h3 id="scheduling-criteria-调度的准则">Scheduling Criteria 调度的准则<a class="headerlink" href="#scheduling-criteria-调度的准则" title="Permanent link">&para;</a></h3>
+<p>CPU utilization：CPU 利用率<br />
+throughput : 吞吐量。
+turnaround time：执行一个进程的时间。从进程开始到进程结束。
+waiting time：在等待队列中等待的时间。
+response time：从第一次提交到提一次发生相应的时间。</p>
+<h3 id="algorithm-调度的算法">Algorithm 调度的算法<a class="headerlink" href="#algorithm-调度的算法" title="Permanent link">&para;</a></h3>
+<p>FCFS，first in first server。非抢占的。
+SJF，shortest job first。SJF 可能是抢占式的也可能是非抢占式的。
+priority scheduling<br />
+RR，round-robin。轮询。
+multilevel queue scheduling。有不同的队列，对每个队列采用的是不同的调度算法。
+multilevel feedback queue scheduling。最通用复杂度最高的算法。一个进程可能在不同的队列之间切换。</p>
+<h3 id="thread-scheduling">Thread Scheduling<a class="headerlink" href="#thread-scheduling" title="Permanent link">&para;</a></h3>
+<p>contention 争用 scope 范围<br />
+SCS，system-contention scope。CPU 资源在所有的线程之间进行竞争。
+PCS，process-contention scope ( n-1 或者 n-n ) 调度是在进程和进程之间进行竞争的。在不是 1 to 1 映射的情况下，当一个内核线程被调用的时候，需要由 LWP 来决定是对应的多个用户线程中的哪一个用户线程来运行。</p>
+<h3 id="multiple-processor-scheduling-多处理器的调度">Multiple-processor Scheduling 多处理器的调度<a class="headerlink" href="#multiple-processor-scheduling-多处理器的调度" title="Permanent link">&para;</a></h3>
+<p>symmetric multiprocessing 对称的 SMP 每个处理器地位是一样的<br />
+asymmetric multiprocessing 非对称的</p>
+<p>CMT 硬件多线程 multithread core。硬件会决定哪一个真正的 thread 在这一时刻跑在了 cpu 上。</p>
+<p>load balancing 负载均衡<br />
+processor affinity 处理器亲和性。CPU 的 cache 会保存一个进程运行时的一些需要的数据，而做 load balancing 的时候不能搬运这些数据。这是程序运行局部性原理的体现。</p>
+<p>NUMA：每个 CPU 都有自己的 physical memory。但是这些 memory 是同一编址的。</p>
+<p>soft real-time system：软实时系统。实时任务优先级会更加高，但不能保证下一时刻就被调度。
+hard real-time system：硬实时系统。保证了下一时刻就被调度。如果没有在规定时间内完成，那么 watch dog（一个硬件的部件）会将操作系统进行重启。</p>
+<h2 id="what-really-happened-on-mars">What Really Happened on Mars<a class="headerlink" href="#what-really-happened-on-mars" title="Permanent link">&para;</a></h2>
+<p>火星车，一个 CPU 调度经典案例。
+VxWorks 是一个硬实时操作系统。这是由于没有合理控制 priority 和 mutex 而导致的，最终导致了 priority inversion 优先级反转。解决方案是优先级继承，如果低优先级线程持有被高优先级线程需要的资源，那么就需要提高这个低优先级线程的优先级。</p>
+<h2 id="synchronization">Synchronization<a class="headerlink" href="#synchronization" title="Permanent link">&para;</a></h2>
+<h3 id="race-condition">Race Condition<a class="headerlink" href="#race-condition" title="Permanent link">&para;</a></h3>
+<p>多个线程同时操作共享的 data，则程序执行的结果取决于程序执行的顺序。竞争条件。</p>
+<h3 id="critical-section">Critical Section<a class="headerlink" href="#critical-section" title="Permanent link">&para;</a></h3>
+<p>entry section：等待进入 critical section 的代码区域<br />
+critical section：去修改一些共享的资源<br />
+exit section：离开 critical section，会将一些锁释放<br />
+remainder section：无关的区域</p>
+<h3 id="solution-to-critical-section-three-requirements">Solution to Critical-section: Three Requirements<a class="headerlink" href="#solution-to-critical-section-three-requirements" title="Permanent link">&para;</a></h3>
+<p>mutual exclusion：只能有一个 process 在 critical section 之中<br />
+progress：由那些不在 remainder section 之中的 process 决定下一个进入 critical section 的是谁，并且这个选择一定是可以选出来的。
+bounded waiting：发出进入 critical section 之后必须有限的时间内得到解决。</p>
+<h3 id="sequential-consistency-sc">Sequential Consistency (SC)<a class="headerlink" href="#sequential-consistency-sc" title="Permanent link">&para;</a></h3>
+<p>最终在机器上执行的指令顺序和我们看到的是一样的。CPU 不会进行指令的重排。</p>
+<h3 id="hardware-instructions">Hardware Instructions<a class="headerlink" href="#hardware-instructions" title="Permanent link">&para;</a></h3>
+<p>test-and-set instruction, 会将指定地址处的内容拿出来，并且将指定地址处的内容设置为 true。有了 test-and-set instruction 之后，就可以实现锁了。不过 bounded wairing 是没有实现的。
+compare-and-swap instruction。利用 compare and swap 也可以实现锁的操作。
+<img alt="" src="../../img/effa19afe4a25ff1269d7a11d6bd9de2_MD5.png" /></p>
+<p>我们通常是将 test-and-set 和 compare-and-swap 作为最基础的 block 来实现我们的锁。</p>
+<h3 id="semaphore-信号量">Semaphore 信号量<a class="headerlink" href="#semaphore-信号量" title="Permanent link">&para;</a></h3>
+<p>代表了多少 units of a particular resource is available。
+semaphore 可以通过 wait（P 操作）和 signal（V 操作）操作进行更新。</p>
+<h3 id="synchronization-examples">Synchronization Examples<a class="headerlink" href="#synchronization-examples" title="Permanent link">&para;</a></h3>
+<p>bounded buffer problem：生产者和消费者共享 n 个 buffer。
+reader-writers problem：读者并不修改状态和内容。
+dining-philosopher problem：哲学家进餐问题。</p>
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      最后更新:
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">2023年8月11日 10:45:38</span>
+      
+        <br>
+        创建日期:
+        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">2023年8月11日 10:45:38</span>
+      
+    
+  </small>
+</div>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            回到页面顶部
+          </button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright © 2022 Apostle-lemon
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://github.com/Apostle-lemon" target="_blank" rel="noopener" title="github" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.annotate", "navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.indexes", "navigation.top", "search.highlight", "search.share"], "search": "../../../assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.220ee61c.min.js"></script>
+      
+        
+          <script src="../../../javascripts/mathjax.js"></script>
+        
+      
+        
+          <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        
+      
+        
+          <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        
+      
+    
+  </body>
+</html>
